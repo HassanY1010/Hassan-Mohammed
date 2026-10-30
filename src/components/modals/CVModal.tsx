@@ -174,8 +174,8 @@ export function CVModal({ isOpen, onClose }: CVModalProps) {
           <div className="pt-4 border-t border-slate-800 print:border-slate-300 text-center text-xs text-slate-500 print:text-slate-600">
             <p>
               {lang === 'ar' 
-                ? 'تم إنشاء هذه السيرة الذاتية رقمياً من الموقع الشخصي للمهندس حسن بارفعه — جاهزة للتحقق المباشر والتواصل الفوري.' 
-                : 'Digitally verified curriculum vitae of Hassan Mohammed Barafah — available for immediate contact & contracts.'}
+                ? 'تم إنشاء هذه السيرة الذاتية رقمياً من الموقع الشخصي للمهندس حسن محمد — جاهزة للتحقق المباشر والتواصل الفوري.' 
+                : 'Digitally verified curriculum vitae of Hassan Mohammed — available for immediate contact & contracts.'}
             </p>
           </div>
         </div>

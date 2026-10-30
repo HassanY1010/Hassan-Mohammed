@@ -72,7 +72,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json(
       {
         success: true,
-        message: 'Your message has been received successfully. Hassan Barafah will review and reply within 24 hours.',
+        message: 'Your message has been received successfully. Hassan Mohammed will review and reply within 24 hours.',
         data: {
           name: sanitizedData.name,
           receivedAt: sanitizedData.receivedAt,

@@ -4,7 +4,7 @@ import { LanguageProvider } from '@/context/LanguageContext';
 import { ThemeProvider } from '@/context/ThemeContext';
 import { PROFILE } from '@/data/profile';
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://hassan-barafah.vercel.app';
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://hassan-portfolio-ten-ruddy.vercel.app';
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

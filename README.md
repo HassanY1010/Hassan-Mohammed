@@ -3,6 +3,9 @@
 موقع شخصي احترافي عالمي للمطور ومهندس الحلول الرقمية **حسن محمد (Hassan Mohammed)**.
 تم بناؤه وتطويره باستخدام أحدث معايير هندسة البرمجيات وتجربة المستخدم ليعكس هوية مهنية تقنية فاخرة ومتطورة (Premium Tech Design).
 
+- 🌐 **الموقع الحي المباشر:** [https://hassan-portfolio-ten-ruddy.vercel.app](https://hassan-portfolio-ten-ruddy.vercel.app)
+- 🐙 **المستودع الرسمي:** [https://github.com/HassanY1010/Hassan-Mohammed](https://github.com/HassanY1010/Hassan-Mohammed)
+
 ---
 
 ## 🌟 المواصفات والمميزات الرئيسية
@@ -69,7 +72,7 @@ src/
 ├── data/
 │   ├── expertise.ts              # بيانات التخصصات والقدرات
 │   ├── process.ts                # بيانات مراحل العمل
-│   ├── profile.ts                # البيانات الشخصية والمهنية لحسن بارفعه
+│   ├── profile.ts                # البيانات الشخصية والمهنية لحسن محمد
 │   ├── projects.ts               # بيانات المشاريع وروابطها
 │   ├── services.ts               # بيانات الخدمات والمميزات
 │   ├── skills.ts                 # بيانات المهارات المصنفة
@@ -107,9 +110,8 @@ npm run build
 
 ## ☁️ النشر على Vercel (Deployment)
 
-المشروع مهيأ بالكامل للنشر الفوري بنقرة واحدة على منصة Vercel:
-1. ارفع الكود إلى مستودع GitHub الخاص بك: `https://github.com/HassanY1010/portfolio`
-2. سجّل الدخول إلى [Vercel](https://vercel.com) واختر **Import Project**.
-3. اختر المستودع واضغط **Deploy**.
-4. سيتم بناء الموقع ونشره عالمياً على شبكة Vercel Edge Network مع تفعيل شهادة SSL وتحديثات سريعة عند أي تعديل.
+المشروع منشور ومربوط مباشرة بـ Vercel:
+1. المستودع المتزامن على GitHub: `https://github.com/HassanY1010/Hassan-Mohammed`
+2. الرابط المباشر للإنتاج: `https://hassan-portfolio-ten-ruddy.vercel.app`
+3. أي تعديل يتم دفعه إلى فرع `main` يُنشر تلقائياً عبر Vercel CI/CD في ثوانٍ معدودة.
 
