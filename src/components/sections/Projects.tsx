@@ -7,7 +7,6 @@ import { ProjectItem } from '@/types';
 import { 
   FolderGit2, 
   ExternalLink, 
-  Github, 
   Layers, 
   Cpu, 
   Smartphone, 

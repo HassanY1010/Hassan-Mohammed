@@ -5,7 +5,7 @@ import { useLanguage } from '@/context/LanguageContext';
 import { PROFILE } from '@/data/profile';
 import { EXPERTISE_LIST } from '@/data/expertise';
 import { SKILL_CATEGORIES } from '@/data/skills';
-import { X, Printer, Mail, Phone, MapPin, Globe, Github, ExternalLink } from 'lucide-react';
+import { X, Printer, Mail, Phone, MapPin, Globe, ExternalLink } from 'lucide-react';
 
 interface CVModalProps {
   isOpen: boolean;
@@ -98,7 +98,7 @@ export function CVModal({ isOpen, onClose }: CVModalProps) {
               </p>
 
               {/* Contact Row */}
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-4 text-xs text-slate-300 print:text-slate-800">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mt-4 text-xs text-slate-300 print:text-slate-800">
                 <a href={`mailto:${PROFILE.socials.email}`} className="flex items-center justify-center sm:justify-start gap-2 hover:text-cyan-400">
                   <Mail className="w-3.5 h-3.5 text-blue-400 shrink-0" />
                   <span className="truncate">{PROFILE.socials.email}</span>
@@ -106,10 +106,6 @@ export function CVModal({ isOpen, onClose }: CVModalProps) {
                 <a href={PROFILE.socials.whatsapp} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center sm:justify-start gap-2 hover:text-emerald-400">
                   <Phone className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
                   <span>{PROFILE.socials.whatsappDisplay}</span>
-                </a>
-                <a href={PROFILE.socials.github} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center sm:justify-start gap-2 hover:text-slate-100">
-                  <Github className="w-3.5 h-3.5 text-slate-400 shrink-0" />
-                  <span>github.com/HassanY1010</span>
                 </a>
               </div>
             </div>

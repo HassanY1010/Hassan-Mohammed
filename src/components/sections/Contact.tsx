@@ -8,7 +8,6 @@ import {
   Send, 
   Mail, 
   Phone, 
-  Github, 
   MapPin, 
   CheckCircle2, 
   AlertCircle,
@@ -150,27 +149,6 @@ export function Contact({ selectedService }: ContactProps) {
                     </span>
                   </div>
                 </a>
-
-                {/* GitHub */}
-                <a
-                  href={PROFILE.socials.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-start gap-3 p-3.5 rounded-xl bg-slate-950/70 border border-slate-800/80 hover:border-slate-600 transition-colors group"
-                >
-                  <div className="p-2 rounded-lg bg-slate-900 text-slate-300 group-hover:text-white">
-                    <Github className="w-4 h-4" />
-                  </div>
-                  <div>
-                    <span className="text-xs font-semibold text-slate-300 group-hover:text-white block">
-                      {t('contact.githubDirect')}
-                    </span>
-                    <span className="text-[11px] font-mono text-slate-400">
-                      github.com/HassanY1010
-                    </span>
-                  </div>
-                </a>
-
               </div>
             </div>
 

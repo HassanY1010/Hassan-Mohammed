@@ -45,7 +45,6 @@ export const PROFILE = {
     ],
   },
   socials: {
-    github: "https://github.com/HassanY1010",
     whatsapp: "https://wa.me/967776461892",
     email: "hassanmohammedbarafah836@gmail.com",
     whatsappDisplay: "+967 776 461 892",

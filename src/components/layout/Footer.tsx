@@ -6,8 +6,6 @@ import { PROFILE } from '@/data/profile';
 import { EXPERTISE_LIST } from '@/data/expertise';
 import { 
   ArrowUp, 
-  Github, 
-  Linkedin, 
   Mail, 
   Phone, 
   Terminal,
@@ -73,15 +71,6 @@ export function Footer() {
 
             {/* Social Icons */}
             <div className="flex items-center gap-3 pt-2">
-              <a
-                href={PROFILE.socials.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-300 hover:text-white border border-slate-800 transition-colors"
-                aria-label="GitHub Profile"
-              >
-                <Github className="w-4 h-4" />
-              </a>
               <a
                 href={PROFILE.socials.whatsapp}
                 target="_blank"

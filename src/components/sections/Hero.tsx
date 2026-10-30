@@ -10,7 +10,6 @@ import {
   Send, 
   Terminal, 
   Sparkles, 
-  Github, 
   Phone, 
   Mail,
   Layers,
@@ -137,15 +136,6 @@ export function Hero({ onOpenCv }: HeroProps) {
             {/* Social Coordinates */}
             <div className="flex items-center justify-center lg:justify-start gap-4 pt-2">
               <span className="text-xs text-slate-400 font-mono">Connect:</span>
-              <a
-                href={PROFILE.socials.github}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-slate-400 hover:text-white transition-colors"
-                aria-label="GitHub"
-              >
-                <Github className="w-4 h-4" />
-              </a>
               <a
                 href={PROFILE.socials.whatsapp}
                 target="_blank"

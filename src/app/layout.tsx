@@ -90,7 +90,6 @@ export default function RootLayout({
     telephone: '+967776461892',
     url: siteUrl,
     sameAs: [
-      PROFILE.socials.github,
       PROFILE.socials.whatsapp,
     ],
     knowsAbout: [

@@ -3,7 +3,6 @@ export type Direction = 'rtl' | 'ltr';
 export type Theme = 'dark' | 'light';
 
 export interface SocialLinks {
-  github: string;
   whatsapp: string;
   email: string;
 }
@@ -46,7 +45,6 @@ export interface ProjectItem {
   myRole: { ar: string; en: string };
   technologies: string[];
   liveUrl?: string;
-  githubUrl?: string;
   featured: boolean;
   highlights: { ar: string[]; en: string[] };
 }

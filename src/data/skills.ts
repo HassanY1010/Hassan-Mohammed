@@ -118,7 +118,7 @@ export const SKILL_CATEGORIES: SkillCategory[] = [
     title: { ar: "أدوات التطوير والنشر (DevOps & Tools)", en: "DevOps & Tooling" },
     icon: "Terminal",
     skills: [
-      { name: "Git & GitHub Workflow", highlight: true },
+      { name: "Git & Version Control", highlight: true },
       { name: "Docker & Containerization", highlight: true },
       { name: "Vercel Deployment & Edge", highlight: true },
       { name: "CI/CD Pipelines", highlight: false },

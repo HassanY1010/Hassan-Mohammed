@@ -205,7 +205,6 @@ export const PROJECTS_LIST: ProjectItem[] = [
     },
     technologies: ["Next.js", "React", "PostgreSQL", "TypeScript", "Tailwind CSS", "RBAC", "Financial Invoicing"],
     liveUrl: "https://business-os-manssouri.vercel.app/",
-    githubUrl: "https://github.com/HassanY1010",
     highlights: {
       ar: [
         "إدارة متقدمة لـ CRM ومراحل الصفقات والعملاء",
@@ -249,7 +248,6 @@ export const PROJECTS_LIST: ProjectItem[] = [
     },
     technologies: ["React", "TypeScript", "Vite", "Supabase", "Express.js", "Thermal Printing", "POS Billing"],
     liveUrl: "https://pos.taylancetech.com/",
-    githubUrl: "https://github.com/HassanY1010",
     highlights: {
       ar: [
         "معالجة فورية وسريعة لطلبات البيع والشراء",
@@ -293,7 +291,6 @@ export const PROJECTS_LIST: ProjectItem[] = [
     },
     technologies: ["Next.js", "React", "Prisma ORM", "PostgreSQL", "Tailwind CSS", "User Auth"],
     liveUrl: "https://shopkartsite.vercel.app/",
-    githubUrl: "https://github.com/HassanY1010",
     highlights: {
       ar: [
         "تصفح فوري للمنتجات والتصنيفات وفلاتر الأسعار",
@@ -337,7 +334,6 @@ export const PROJECTS_LIST: ProjectItem[] = [
     },
     technologies: ["Next.js", "React", "PostgreSQL", "Stripe API", "Tailwind CSS", "REST APIs"],
     liveUrl: "https://store-next-beta.vercel.app",
-    githubUrl: "https://github.com/HassanY1010",
     highlights: {
       ar: [
         "تكامل مباشر وآمن مع بوابة Stripe العالمية للدفع الإلكتروني",
@@ -381,7 +377,6 @@ export const PROJECTS_LIST: ProjectItem[] = [
     },
     technologies: ["React", "Supabase", "PostgreSQL", "Tailwind CSS", "Data Visualization", "CSV/Excel Parser"],
     liveUrl: "https://pocket-wise-tracker-88.lovable.app",
-    githubUrl: "https://github.com/HassanY1010",
     highlights: {
       ar: [
         "تسجيل وتصنيف ذكي وفوري للمصروفات اليومية",
@@ -425,7 +420,6 @@ export const PROJECTS_LIST: ProjectItem[] = [
     },
     technologies: ["Flutter", "Android", "Mobile UX", "Video Streaming", "Interactive Quizzes", "Student Analytics"],
     liveUrl: "https://play.google.com/store/apps/details?id=co.robin.lxruy&pcampaignid=web_share",
-    githubUrl: "https://github.com/HassanY1010",
     highlights: {
       ar: [
         "مشاهدة دروس الفيديو بجودة عالية وسلاسة على الهواتف",
@@ -469,7 +463,6 @@ export const PROJECTS_LIST: ProjectItem[] = [
     },
     technologies: ["AI Models", "LLM APIs", "Adaptive Learning", "Mobile App", "Automated Grading", "Python Backend"],
     liveUrl: "https://play.google.com/store/apps/details?id=com.edventure.plus&pcampaignid=web_share",
-    githubUrl: "https://github.com/HassanY1010",
     highlights: {
       ar: [
         "تصحيح آلي فوري للإجابات المكتوبة بالذكاء الاصطناعي",
@@ -513,7 +506,6 @@ export const PROJECTS_LIST: ProjectItem[] = [
     },
     technologies: ["Flutter", "Android", "QR Code Validation", "Mobile Payments", "Offline Sync", "Transit Tech"],
     liveUrl: "https://play.google.com/store/apps/details?id=com.bpcbt.billet.clientv2.yemen&pcampaignid=web_share",
-    githubUrl: "https://github.com/HassanY1010",
     highlights: {
       ar: [
         "شراء تذاكر المواصلات العامة إلكترونياً بخطوات بسيطة",
@@ -557,7 +549,6 @@ export const PROJECTS_LIST: ProjectItem[] = [
     },
     technologies: ["Flutter", "Android", "Geolocation", "Intercity Ridesharing", "In-App Chat", "Booking Engine"],
     liveUrl: "https://play.google.com/store/apps/details?id=com.ahmed.safer&pcampaignid=web_share",
-    githubUrl: "https://github.com/HassanY1010",
     highlights: {
       ar: [
         "نشر السائقين لرحلاتهم وتحديد المقاعد وسعر الركوب",
@@ -601,7 +592,6 @@ export const PROJECTS_LIST: ProjectItem[] = [
     },
     technologies: ["Flutter", "Android", "GPS Tracking", "Maps APIs", "Driver Matching", "Payment Gateways"],
     liveUrl: "https://play.google.com/store/apps/details?id=com.weplus.travel&pcampaignid=web_share",
-    githubUrl: "https://github.com/HassanY1010",
     highlights: {
       ar: [
         "مطابقة ذكية وسريعة مع أقرب سائق سيارة أجرة متاح",
@@ -645,7 +635,6 @@ export const PROJECTS_LIST: ProjectItem[] = [
     },
     technologies: ["Flutter", "Android", "Sports Tech", "Booking Engine", "Player Matchmaking", "Stats Tracking"],
     liveUrl: "https://play.google.com/store/apps/details?id=com.andaplay&pcampaignid=web_share",
-    githubUrl: "https://github.com/HassanY1010",
     highlights: {
       ar: [
         "حجز ملاعب كرة القدم والرياضات المختلفة بسهولة وفورية",
@@ -689,7 +678,6 @@ export const PROJECTS_LIST: ProjectItem[] = [
     },
     technologies: ["Generative AI", "LLM APIs", "Smart Itinerary Engine", "Mobile App", "Travel Tech", "Location Services"],
     liveUrl: "https://play.google.com/store/apps/details?id=ai.ziarah.app&pcampaignid=web_share",
-    githubUrl: "https://github.com/HassanY1010",
     highlights: {
       ar: [
         "توليد جداول سياحية يومية مخصصة وفورية بالذكاء الاصطناعي",
@@ -733,7 +721,6 @@ export const PROJECTS_LIST: ProjectItem[] = [
     },
     technologies: ["Next.js", "Laravel", "PostgreSQL", "Redis", "Docker", "REST APIs", "Travel GDS"],
     liveUrl: "https://portfolio.thecodeman.cloud/",
-    githubUrl: "https://github.com/HassanY1010",
     highlights: {
       ar: [
         "نظام بحث ومقارنة شامل لتذاكر الطيران وأسعار الفنادق",
@@ -777,7 +764,6 @@ export const PROJECTS_LIST: ProjectItem[] = [
     },
     technologies: ["Next.js", "React.js", "Tailwind CSS", "MongoDB", "Node.js", "Stripe", "Marketplace Engine"],
     liveUrl: "https://www.helpora.cz/en",
-    githubUrl: "https://github.com/HassanY1010",
     highlights: {
       ar: [
         "سوق خدمات متعدد الفئات يربط العملاء بالمهنيين المعتمدين",
@@ -822,7 +808,6 @@ export const PROJECTS_LIST: ProjectItem[] = [
     },
     technologies: ["Next.js", "React.js", "Tailwind CSS", "Headless CMS", "Conversion Optimization", "Interactive UI"],
     liveUrl: "https://www.qolaro.com/",
-    githubUrl: "https://github.com/HassanY1010",
     highlights: {
       ar: [
         "إدارة محتوى ديناميكية 100% لكافة الصفحات والمدونة بدون كود",
@@ -867,7 +852,6 @@ export const PROJECTS_LIST: ProjectItem[] = [
     },
     technologies: ["Next.js", "React.js", "Sanity CMS", "Tailwind CSS", "Healthcare SEO", "Accessibility WCAG"],
     liveUrl: "https://www.logopediedreumel.nl/",
-    githubUrl: "https://github.com/HassanY1010",
     highlights: {
       ar: [
         "نظام إدارة محتوى Sanity CMS مرن للتحكم بالجلسات والمقالات",
