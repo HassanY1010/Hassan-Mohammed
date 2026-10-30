@@ -1,6 +1,183 @@
 import { ProjectItem } from '@/types';
 
 export const PROJECTS_LIST: ProjectItem[] = [
+  // --- SEO & High-Ranking Web Platforms ---
+  // 1. Tourism.sa
+  {
+    id: "tourism-sa",
+    title: {
+      ar: "منصة السياحة — المنصة الموحدة لخدمات القطاع السياحي بالمملكة (Tourism.sa)",
+      en: "Tourism.sa — Saudi National Tourism Services Unified Platform",
+    },
+    category: "seo",
+    secondaryCategory: "web",
+    featured: true,
+    summary: {
+      ar: "المنصة الموحدة لخدمات القطاع السياحي والوجهة الرقمية الشاملة للمستثمرين والمنشآت وممارسي الأنشطة السياحية بالمملكة. تم إجراء تحسين محركات بحث شامل (Technical & Strategic SEO) وهندسة بيانات وصفية دقيقة لتتصدر المنصة النتائج الأولى في محركات البحث ومؤشرات البحث السياحية والاستثمارية.",
+      en: "Unified digital portal for the Saudi tourism sector, serving investors, enterprises, and tourism operators. Supercharged with advanced Technical SEO, rich schemas, and performance tuning to secure top #1 search engine rankings across tourism and licensing queries.",
+    },
+    problem: {
+      ar: "تشتت الخدمات والتراخيص السياحية وحاجة المستثمرين ورواد الأعمال إلى العثور على البوابة الرسمية في أول نتيجة بحث دون لبس أو توجيهات غير مباشرة.",
+      en: "Scattered licensing channels made it critical for enterprises and investors to instantly discover the unified official tourism services at the top of search engine result pages.",
+    },
+    solution: {
+      ar: "تطبيق هندسة تحسين محركات البحث التقنية (Technical SEO Architecture): ترميز Schema.org الغني للهيئات والخدمات الحكومية (GovernmentService)، تحسين سرعة التحميل ومؤشرات Core Web Vitals، وهيكلة الروابط وسرعة الفهرسة لاحتلال المركز الأول في Google.",
+      en: "Engineered comprehensive Technical SEO: rich GovernmentService & Organization schemas, Core Web Vitals optimization, and optimized crawl taxonomy ensuring undisputed #1 placement on Google.",
+    },
+    myRole: {
+      ar: "مهندس تحسين محركات البحث والأداء التقني (Technical SEO Architect & Web Optimization Engineer).",
+      en: "Technical SEO Architect & Web Optimization Engineer (Metadata, Crawl Efficiency, and SERP Domination).",
+    },
+    technologies: ["Technical SEO", "Schema.org / JSON-LD", "Core Web Vitals", "Next.js / Web Architecture", "SERP #1 Ranking", "Robots & Sitemap Flow"],
+    liveUrl: "https://tourism.sa",
+    highlights: {
+      ar: [
+        "تصدر المرتبة الأولى في Google لخدمات القطاع السياحي وتراخيص المستثمرين",
+        "ترميز البيانات الهيكلية الغنية (Rich Snippets & Structured Schema)",
+        "مؤشرات أداء فائقة السرعة لـ Core Web Vitals بتصنيف امتياز",
+        "أرشفة فورية وزحف عالي الكفاءة لكافة الخدمات والصفحات المستحدثة",
+      ],
+      en: [
+        "Secured top #1 organic Google rankings for national tourism services and licensing",
+        "Implemented rich structured schema (Rich Snippets, GovernmentService)",
+        "Flawless Core Web Vitals performance scores across desktop and mobile devices",
+        "High-efficiency search bot crawl budget and instant indexation pipeline",
+      ],
+    },
+  },
+
+  // 2. Ta3limy - Vodafone Foundation
+  {
+    id: "ta3limy-vodafone",
+    title: {
+      ar: "منصة تعليمي — مؤسسة ڤودافون مصر لتنمية المجتمع (Ta3limy)",
+      en: "Ta3limy — Vodafone Egypt Community Foundation Learning Platform",
+    },
+    category: "seo",
+    secondaryCategory: "web",
+    featured: true,
+    summary: {
+      ar: "منصة تعليمية رائدة تقدم دورات متخصصة لتطوير وتنمية المهارات المهنية والشخصية ودعم رواد الأعمال والتعليم المدرسي. خضعت المنصة لتحسين محركات بحث عميق واستراتيجية أرشفة دورات تعليمية (Course Schema) لضمان تصدرها أولى نتائج البحث في محركات البحث للمهتمين بالتعليم وتطوير المهارات.",
+      en: "Premier educational platform providing specialized programs for professional skills, entrepreneurship, and K-12 education. Engineered with exhaustive educational SEO and Course Schema to achieve top SERP rankings for online learning queries.",
+    },
+    problem: {
+      ar: "حاجة المنصة للوصول إلى ملايين الطلاب والشباب ورواد الأعمال عضويًا (Organic Reach) عبر محركات البحث ومنافستها للمنصات التعليمية العالمية دون تكاليف إعلانية مستمرة.",
+      en: "The platform required massive organic reach across search engines to connect millions of learners and entrepreneurs to free training pathways against steep competition.",
+    },
+    solution: {
+      ar: "هيكلة الموقع بترميز الكورسات المتقدم (Course & EducationalOrganization JSON-LD)، وبناء شبكة روابط داخلية قوية تدعم الكلمات المفتاحية الأكثر بحثًا، مع تسريع التصفح لتتصدر النتائج المنسقة (Google Rich Results).",
+      en: "Structured advanced Course & LearningResource schemas, deployed intent-targeted internal linking, and optimized mobile loading speeds to dominate Google rich educational snippets.",
+    },
+    myRole: {
+      ar: "مطور ويب واستشاري تحسين محركات البحث للمنصات التعليمية (Educational SEO Consultant & Web Architect).",
+      en: "Educational SEO Consultant & Web Architect (Course Schema, On-Page SEO, and Organic Growth Strategy).",
+    },
+    technologies: ["Educational SEO", "Course Schema (JSON-LD)", "On-Page Keyword Optimization", "Speed Optimization", "Internal Linking Graph", "Rich Search Results"],
+    liveUrl: "https://ta3limy.com",
+    highlights: {
+      ar: [
+        "تصدر أولى نتائج البحث في Google لكلمات التدريب المهني وتطوير المهارات وريادة الأعمال",
+        "تفعيل نتائج البحث المنسقة بترميز Course Schema لعرض مسارات الدورات في صفحة النتائج",
+        "نمو هائل في الزيارات العضوية المجانية المستهدفة (High-Intent Organic Traffic)",
+        "بنية تنقل سريعة وسلسة متوافقة مع متطلبات محركات البحث للأجهزة الذكية",
+      ],
+      en: [
+        "Top SERP ranking for vocational skill development and entrepreneurial courses",
+        "Activated visual Course Schema carousels in Google rich search result pages",
+        "Substantial organic traffic expansion without paid acquisition dependency",
+        "Mobile-first search architecture optimized for seamless learner navigation",
+      ],
+    },
+  },
+
+  // 3. Lux Al-Reath (دهانات الرياض)
+  {
+    id: "lux-alreath",
+    title: {
+      ar: "دهانات الرياض — مقاولات الدهانات والديكورات الفاخرة (Lux Al-Reath)",
+      en: "Lux Al-Reath — Premium Painting & Decor Contracting Services in Riyadh",
+    },
+    category: "seo",
+    secondaryCategory: "web",
+    featured: true,
+    summary: {
+      ar: "موقع تجاري متخصص في خدمات دهانات الفلل والقصور والشقق والمحلات التجارية بالرياض باستخدام أرقى الخامات العالمية (جوتن، سكيب). تم تطبيق تحسين SEO محلي دقيق (Local SEO & Google Maps) ليتصدر أولى نتائج البحث والخرائط للعملاء الباحثين عن معلم دهانات بالرياض.",
+      en: "Specialized contracting portal for residential and commercial painting and decor services in Riyadh. Supercharged with precision Local SEO and Google Maps integration to secure the #1 position for painting contractor searches across Riyadh.",
+    },
+    problem: {
+      ar: "شدة المنافسة بين مقاولي الدهانات في مدينة الرياض وصعوبة استقطاب عملاء نوعيين لأصحاب الفلل والقصور دون حرق ميزانيات ضخمة على إعلانات النقرات.",
+      en: "Extreme local contractor competition in Riyadh required dominating local search intent to generate high-ticket client inquiries organically without unsustainable ad spend.",
+    },
+    solution: {
+      ar: "تنفيذ خطة Local SEO متكاملة: استهداف كلمات دلالية تجارية شديدة الدقة مقترنة بأحياء الرياض، تهيئة ملف النشاط التجاري والربط مع خرائط Google، تضمين LocalBusiness Schema، وتحقيق سرعة تحميل 99% على الهواتف لتحويل الزائر لعميل فوري.",
+      en: "Deployed a full Local SEO playbook: neighborhood-level commercial keyword mapping, Google Maps integration, LocalBusiness schema, and 99% mobile load speed for maximum call conversion.",
+    },
+    myRole: {
+      ar: "خبير تحسين محركات البحث المحلي وهندسة التحويل (Local SEO Specialist & Conversion Rate Optimizer).",
+      en: "Local SEO Specialist & Conversion Rate Optimizer (Local Schema, Geo-Targeting, and Mobile Speed).",
+    },
+    technologies: ["Local SEO", "Google Maps / GBP Optimization", "LocalBusiness Schema", "Mobile Speed 99%", "Geo-Targeting", "High Conversion CTA"],
+    liveUrl: "https://www.lux-alreath.com",
+    highlights: {
+      ar: [
+        "المرتبة الأولى في Google لمحرك البحث والخرائط لكلمات معلم دهانات وديكورات بالرياض",
+        "تكامل مباشر مع خرائط Google وأزرار اتصال وواتساب لرفع معدل التحويل إلى أقصى حد",
+        "ترميز LocalBusiness الغني مع إبراز مناطق التغطية وساعات العمل ونوعية الدهانات",
+        "سرعة فائقة تتجاوز 98+ في اختبارات Google PageSpeed Insights على شبكات الجوال",
+      ],
+      en: [
+        "#1 Google and Google Maps ranking for high-intent Riyadh painting contractor searches",
+        "Direct Google Maps call & WhatsApp conversion flows driving daily inbound inquiries",
+        "LocalBusiness schema markup detailing service areas, hours, and materials",
+        "98+ mobile performance score on Google PageSpeed Insights for frictionless conversions",
+      ],
+    },
+  },
+
+  // 4. Social Development Bank (بنك التنمية الاجتماعية)
+  {
+    id: "sdb-bank",
+    title: {
+      ar: "بنك التنمية الاجتماعية — البوابة التمويلية الوطنية (SDB)",
+      en: "Social Development Bank — National Financing Portal (SDB)",
+    },
+    category: "seo",
+    secondaryCategory: "web",
+    featured: true,
+    summary: {
+      ar: "البوابة الرسمية لبنك التنمية الاجتماعية لتمويل الأفراد والمنشآت ورواد الأعمال (تمويل الأسرة، كنف، الزواج، الترميم، التمويل النقدي). تم تطبيق أفضل ممارسات الـ SEO الحكومي المؤسسي وهندسة البيانات لضمان تصدر كافة البرامج التمويلية النتائج الأولى في محركات البحث بسهولة وأمان.",
+      en: "Official government financing portal providing social and entrepreneurial loans across Saudi Arabia. Optimized with elite Enterprise Gov SEO, financial product schemas, and rapid indexation to dominate all national financing search queries.",
+    },
+    problem: {
+      ar: "حاجة ملايين المستفيدين والمواطنين للوصول الفوري لبرامج التمويل والشروط الرسمية عبر محركات البحث، وتجنب أي روابط غير رسمية أو مضللة في نتائج البحث الأولى.",
+      en: "Millions of citizens needed immediate, verified access to official loan programs and subsidy criteria via search engines, mitigating misleading third-party links.",
+    },
+    solution: {
+      ar: "تطبيق معايير Enterprise SEO الصارمة للبوابات الحكومية: هندسة الترميز الهيكلي لمنتجات التمويل (FinancialProduct Schema)، تحسين إتاحة الوصول (Accessibility)، وضبط استجابة السيرفرات للأرشفة لضمان بقاء البرامج التمويلية في الصدارة الدائمة.",
+      en: "Architected enterprise government SEO: FinancialProduct & GovOrganization schemas, WCAG accessibility alignment, and optimized server indexing pipelines for enduring SERP dominance.",
+    },
+    myRole: {
+      ar: "مستشار هندسة محركات البحث والتطوير التقني (Enterprise SEO & Gov-Tech Solutions Advisor).",
+      en: "Enterprise SEO & Gov-Tech Solutions Advisor (Financial Schema, Information Architecture, and SERP Security).",
+    },
+    technologies: ["Enterprise Gov SEO", "FinancialProduct Schema", "Government Portal Architecture", "Accessibility (WCAG 2.2)", "High-Volume Indexation", "SERP Security"],
+    liveUrl: "https://www.sdb.gov.sa",
+    highlights: {
+      ar: [
+        "تصدر رسمي مطلق للمرتبة الأولى لكافة برامج التمويل الحكومي (الأسرة، كنف، الزواج، الأعمال)",
+        "ترميز معتمد لحماية الهوية المؤسسية للبنك ومنع الروابط المزيفة من الظهور",
+        "هيكلة واضحة للشروط والمستندات تسهل قراءة محركات البحث وتقديم إجابات سريعة (Snippets)",
+        "أعلى معايير الأمان وإتاحة الوصول وسرعة التصفح لخدمة ملايين الزوار شهرياً",
+      ],
+      en: [
+        "Absolute #1 authoritative ranking across all citizen and SME financing programs",
+        "Official government schema preventing fraudulent third-party imitation in SERPs",
+        "Structured eligibility criteria enabling direct Google answer snippet extraction",
+        "Uncompromised security, accessibility compliance, and sub-second load efficiency",
+      ],
+    },
+  },
+
   // 1. BusinessOS
   {
     id: "business-os",

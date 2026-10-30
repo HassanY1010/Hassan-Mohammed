@@ -37,8 +37,8 @@ export interface SkillCategory {
 export interface ProjectItem {
   id: string;
   title: { ar: string; en: string };
-  category: 'web' | 'mobile' | 'ai' | 'uiux' | 'saas';
-  secondaryCategory?: 'web' | 'mobile' | 'ai' | 'uiux' | 'saas';
+  category: 'web' | 'mobile' | 'ai' | 'uiux' | 'saas' | 'seo';
+  secondaryCategory?: 'web' | 'mobile' | 'ai' | 'uiux' | 'saas' | 'seo';
   imageUrl?: string;
   summary: { ar: string; en: string };
   problem: { ar: string; en: string };

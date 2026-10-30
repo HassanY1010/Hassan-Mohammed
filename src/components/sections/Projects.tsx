@@ -21,7 +21,9 @@ import {
   Play, 
   Eye, 
   ZoomIn,
-  Palette
+  Palette,
+  TrendingUp,
+  Search
 } from 'lucide-react';
 
 export function Projects() {
@@ -37,6 +39,7 @@ export function Projects() {
 
   const filterTabs = [
     { id: 'all', label: t('projects.filterAll') },
+    { id: 'seo', label: t('projects.filterSeo') },
     { id: 'uiux', label: t('projects.filterUiux') },
     { id: 'saas', label: t('projects.filterSaas') },
     { id: 'web', label: t('projects.filterWeb') },
@@ -50,6 +53,7 @@ export function Projects() {
 
   const getCategoryIcon = (category: string) => {
     switch (category) {
+      case 'seo': return <TrendingUp className="w-3.5 h-3.5 text-emerald-400" />;
       case 'web': return <Layers className="w-3.5 h-3.5 text-blue-400" />;
       case 'mobile': return <Smartphone className="w-3.5 h-3.5 text-cyan-400" />;
       case 'ai': return <Cpu className="w-3.5 h-3.5 text-purple-400" />;
@@ -153,12 +157,17 @@ export function Projects() {
                         {getCategoryIcon(project.category)}
                         <span className="capitalize">{project.category}</span>
                       </span>
-                      {project.featured && (
+                      {project.category === 'seo' ? (
+                        <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-emerald-500/20 border border-emerald-500/40 text-[10px] font-semibold text-emerald-300">
+                          <TrendingUp className="w-3 h-3 text-emerald-400" />
+                          {lang === 'ar' ? 'تصدر نتائج Google #1' : '#1 Google SEO'}
+                        </span>
+                      ) : project.featured ? (
                         <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-blue-600/30 border border-blue-500/50 text-[10px] font-semibold text-blue-300">
                           <Sparkles className="w-3 h-3 text-cyan-400" />
                           Featured
                         </span>
-                      )}
+                      ) : null}
                     </div>
 
                     <div className="space-y-1">
