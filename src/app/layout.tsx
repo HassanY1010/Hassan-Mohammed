@@ -42,14 +42,25 @@ export const metadata: Metadata = {
     locale: 'ar_YE',
     alternateLocale: ['en_US'],
     url: siteUrl,
-    title: `${PROFILE.displayName} | Full Stack Developer & AI Solutions Engineer`,
+    title: `${PROFILE.fullName.ar} (${PROFILE.displayName}) — Full Stack & AI Developer`,
     description: PROFILE.tagline.ar,
     siteName: 'Hassan Mohammed Portfolio',
+    images: [
+      {
+        url: `${siteUrl}/images/hassan.jpg`,
+        secureUrl: `${siteUrl}/images/hassan.jpg`,
+        width: 1024,
+        height: 1024,
+        alt: `${PROFILE.displayName} - Software Engineer & Full Stack Developer`,
+        type: 'image/jpeg',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: `${PROFILE.displayName} | Full Stack & AI Developer`,
-    description: PROFILE.tagline.en,
+    title: `${PROFILE.displayName} | Full Stack Developer & AI Solutions Engineer`,
+    description: PROFILE.tagline.ar,
+    images: [`${siteUrl}/images/hassan.jpg`],
   },
   robots: {
     index: true,
@@ -146,6 +157,14 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
           rel="stylesheet"
         />
+        {/* Open Graph & Social Preview Meta Tags for WhatsApp, Facebook, Telegram */}
+        <meta property="og:image" content={`${siteUrl}/images/hassan.jpg`} />
+        <meta property="og:image:secure_url" content={`${siteUrl}/images/hassan.jpg`} />
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:width" content="1024" />
+        <meta property="og:image:height" content="1024" />
+        <meta property="og:image:alt" content={`${PROFILE.displayName} - Full Stack & AI Developer`} />
+        <link rel="image_src" href={`${siteUrl}/images/hassan.jpg`} />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdPerson) }}
