@@ -706,4 +706,268 @@ export const PROJECTS_LIST: ProjectItem[] = [
       ],
     },
   },
+
+  // 17. UI/UX: EduNova
+  {
+    id: "uiux-edunova",
+    title: {
+      ar: "EduNova (إيدونوفا) — تصميم واجهة وتجربة منصة تعليمية ذكية بالذكاء الاصطناعي",
+      en: "EduNova — AI EdTech & Learning Management Platform UI/UX",
+    },
+    category: "uiux",
+    secondaryCategory: "ai",
+    featured: true,
+    imageUrl: "/images/uiux-edunova.jpg",
+    summary: {
+      ar: "نظام وتجربة مستخدم متكاملة لمنصة تعليم ذكية تجمع بين مدرب الذكاء الاصطناعي التفاعلي، مسارات التعلم المخصصة، لوحة متابعة تقدم الطلاب، وتصميم زجاجي (Glassmorphism) يدعم اللغتين العربية والإنجليزية.",
+      en: "Comprehensive UI/UX design for an AI-powered EdTech dashboard featuring conversational AI coaches, personalized learning paths, interactive progress analytics, and dual RTL/LTR support.",
+    },
+    problem: {
+      ar: "تشتت الطلاب في المنصات التعليمية التقليدية نتيجة لغياب التخصيص الفردي للمسار الدراسي، وصعوبة متابعة المؤشرات الأكاديمية في واجهات مستخدم معقدة.",
+      en: "Students struggled with rigid, unengaging LMS interfaces that lacked personalized AI mentoring and intuitive progress telemetry.",
+    },
+    solution: {
+      ar: "ابتكار نظام تصميم متطور (Atomic Design System) بأسلوب Dark Mode فاخر مع تدرجات النيون والزجاج المصقول، يبرز مسار التعلم المدعوم بالذكاء الاصطناعي، ومؤشرات الأداء الأسبوعية مع دعم كامل للغتين.",
+      en: "Created a refined dark-mode glassmorphic design system spotlighting an AI learning coach, dynamic milestone progression curves, and bi-directional bilingual ergonomics.",
+    },
+    myRole: {
+      ar: "مصمم تجربة وواجهة المستخدم الرئيسي (User Research, Information Architecture, Wireframing, High-Fidelity UI Design System).",
+      en: "Lead UI/UX & Product Designer (Design Tokens, Information Architecture, Prototyping).",
+    },
+    technologies: ["Figma", "Design Systems", "UI/UX Architecture", "Dark Mode Glassmorphism", "AI EdTech", "RTL/LTR Bi-directional"],
+    highlights: {
+      ar: [
+        "واجهة تفاعلية لمدرب الذكاء الاصطناعي ومسارات التعلم التكيفية",
+        "لوحة مؤشرات بيانية أسبوعية لقياس تقدم الطالب وإحصائياته",
+        "بطاقات مقررات تفاعلية مع أوقات الجلسات ومؤشرات الإنجاز",
+        "دعم أصيل وثنائي للغتين العربية والإنجليزية (RTL / LTR)",
+      ],
+      en: [
+        "Conversational AI coach panel with prompt-driven learning milestones",
+        "Dynamic weekly activity graphs and progress gauges",
+        "Interactive course cards with session telemetry and completion status",
+        "Seamless bi-directional RTL Arabic and LTR English layout system",
+      ],
+    },
+  },
+
+  // 18. UI/UX: SportConnect
+  {
+    id: "uiux-sportconnect",
+    title: {
+      ar: "SportConnect (سبورت كونكت) — تصميم واجهة وتجربة منصة حجز الملاعب والبطولات",
+      en: "SportConnect — Sports Venue Booking & Matchmaking Platform UI/UX",
+    },
+    category: "uiux",
+    secondaryCategory: "mobile",
+    featured: true,
+    imageUrl: "/images/uiux-sportconnect.jpg",
+    summary: {
+      ar: "تصميم شامل لمنظومة رياضية متكاملة تشمل تطبيق هاتف للاعبين يتيح حجز الملاعب بالخريطة والبحث عن لاعبين ومباريات، مع لوحة تحكم إدارية Hub لإحصائيات الإيرادات وإدارة البطولات وجدول الملاعب.",
+      en: "End-to-end design system connecting a player mobile app for map-based pitch booking and matchmaking with an executive web dashboard for club revenue and tournament schedules.",
+    },
+    problem: {
+      ar: "صعوبة التنسيق بين اللاعبين وأصحاب الملاعب الرياضية، وتداخل أوقات الحجوزات، وافتقار أندية الهواة لنظام إدارة رقمي ينظم البطولات والإيرادات.",
+      en: "Amateur athletes faced chaotic match coordination and fragmented turf booking, while venue operators lacked an automated dashboard for schedules and tournaments.",
+    },
+    solution: {
+      ar: "تصميم تجربة هاتف ذكية تربط الرادار الجغرافي للملاعب المتاحة مع نظام مطابقة اللاعبين، وتصميم لوحة تحكم إدارية مركزية للجدولة الزمنية والإيرادات وإدارة مباريات البطولات بنظام الأدوار.",
+      en: "Designed an intuitive mobile discovery flow with interactive venue maps and player queues, paired with an admin hub featuring visual schedule timelines and bracket management.",
+    },
+    myRole: {
+      ar: "مصمم منتج ورئيس تجربة الاستخدام (Mobile UI, Venue Scheduling UX, Design System, Prototyping).",
+      en: "Lead Product & UI/UX Designer (Mobile ergonomics, admin dashboard architecture, interactive prototypes).",
+    },
+    technologies: ["Figma", "Mobile UI Design", "Web Dashboard Hub", "Design Tokens", "Sports Matchmaking UX", "Interactive Prototyping"],
+    highlights: {
+      ar: [
+        "خريطة تفاعلية لاكتشاف الملاعب وحجز الأوقات المتاحة فورياً",
+        "نظام ذكي لمطابقة اللاعبين المتاحين والانضمام للمباريات",
+        "لوحة تحكم إدارية للملاعب (Pitch Schedules & Financials)",
+        "نظام إدارة البطولات الرياضية (Tournament Brackets Management)",
+      ],
+      en: [
+        "Interactive pitch map with real-time slot availability indicators",
+        "Skill-based player matchmaking queue and squad invitation flows",
+        "Visual timeline pitch scheduler preventing booking overlap",
+        "Comprehensive tournament bracket tree and revenue analytics",
+      ],
+    },
+  },
+
+  // 19. UI/UX: TravelX
+  {
+    id: "uiux-travelx",
+    title: {
+      ar: "TravelX (ترافيل إكس) — تصميم منظومة السفر والسياحة والحجوزات المتكاملة",
+      en: "TravelX — Integrated Smart Travel, Booking & Itinerary Platform UI/UX",
+    },
+    category: "uiux",
+    secondaryCategory: "web",
+    featured: true,
+    imageUrl: "/images/uiux-travelx.jpg",
+    summary: {
+      ar: "تصميم لمنظومة سياحية شاملة تضم تطبيق مسافر بواجهة بحث متقدمة ومساعد سفر بالذكاء الاصطناعي وجدول رحلات تفاعلي، مع لوحة تحكم مركزية لإدارة الحجوزات والأسعار ومقدمي الخدمات والخرائط.",
+      en: "Unified multi-platform UI/UX design encompassing a passenger mobile app with AI trip planning and geolocation discovery, and an enterprise admin console for reservations and dynamic pricing.",
+    },
+    problem: {
+      ar: "تعقيد تجربة حجز البرامج السياحية وتشتت حجوزات الفنادق والرحلات، وصعوبة اعتماد وإدارة شركات السياحة من قِبل المشرفين.",
+      en: "Travelers suffered from cumbersome multi-step booking flows and generic itineraries, while tourism operators lacked a centralized command center to vet providers.",
+    },
+    solution: {
+      ar: "هندسة واجهة هاتف عصرية ترتكز على مساعد الذكاء الاصطناعي لتخطيط الرحلات بالخرائط، وتصميم لوحة تحكم إدارية حديثة لإدارة الإيرادات، اعتماد مقدمي الخدمات، وتتبع الأفواج السياحية.",
+      en: "Architected a seamless mobile travel experience driven by an AI itinerary assistant and interactive neighborhood maps, complemented by an operator dashboard for verification and live tracking.",
+    },
+    myRole: {
+      ar: "مصمم تجربة مستخدم أول (Lead UX/UI Designer — Multi-Platform Mobile & Web Systems).",
+      en: "Lead UX/UI Designer (Cross-platform design system, mobile flows, operator console UI).",
+    },
+    technologies: ["Figma", "Travel UX", "Multi-Platform Design", "Admin Dashboard", "AI Trip Planner UI", "Design Tokens"],
+    highlights: {
+      ar: [
+        "واجهة هاتف عصرية للمسافر مع مساعد ذكاء اصطناعي للجدولة",
+        "استعراض الفنادق والمنتجعات مع فلاتر ذكية وخريطة تفاعلية",
+        "لوحة تحكم إدارية للمنصة (إجمالي الإيرادات، الحجوزات النشطة)",
+        "نظام اعتماد مقدمي الخدمات وإدارة الأسعار الديناميكية",
+      ],
+      en: [
+        "Mobile travel portal with integrated conversational AI trip planner",
+        "High-fidelity hotel discovery with faceted filters and proximity maps",
+        "Executive analytics console tracking gross booking volumes and KPIs",
+        "Supplier verification portal and dynamic hotel pricing management",
+      ],
+    },
+  },
+
+  // 20. UI/UX: Nexora
+  {
+    id: "uiux-nexora",
+    title: {
+      ar: "Nexora (نكسورا) — تصميم واجهة وتجربة منصة إدارة الأعمال السحابية الذكية",
+      en: "Nexora — Enterprise Business Operations & AI SaaS Platform UI/UX",
+    },
+    category: "uiux",
+    secondaryCategory: "saas",
+    featured: true,
+    imageUrl: "/images/uiux-nexora.jpg",
+    summary: {
+      ar: "تصميم نظام عمليات وساس (SaaS) متقدم لإدارة الشركات؛ يجمع بين لوحة تحكم تفاعلية للإيرادات MRR والمصروفات، إدارة المشاريع والمهام (Kanban)، مساعد مالي بالذكاء الاصطناعي، ومراحل الصفقات Deals Pipeline.",
+      en: "Premium UI/UX design for a modern enterprise operations SaaS dashboard unifying MRR financials, Kanban task boards, AI business assistants, and deal pipelines.",
+    },
+    problem: {
+      ar: "ازدحام لوحات التحكم الإدارية بالبيانات غير المرتبة، وصعوبة قراءة المؤشرات المالية السريعة وتتبع حالة المشاريع بين فرق العمل.",
+      en: "Enterprise managers suffered from data visual clutter, complex financial reporting tools, and siloed project tracking boards.",
+    },
+    solution: {
+      ar: "ابتكار لوحة تحكم فائقة الأناقة بأسلوب Dark Tech مع تنظيم بصري دقيق يضع المقاييس المالية (MRR, Expenses) في المقدمة، ويدمج بطاقات المهام التفاعلية ومساعد الذكاء الاصطناعي في شاشة موحدة.",
+      en: "Crafted a clean dark-mode command center placing key revenue telemetry (MRR, cashflow) upfront, coupled with a responsive Kanban task engine and contextual AI report generator.",
+    },
+    myRole: {
+      ar: "مصمم منتج رقمي رئيسي (SaaS Product Design, Information Architecture, Component Systems).",
+      en: "Lead Product Designer (SaaS Information Architecture, Data Visualization UX, Design Tokens).",
+    },
+    technologies: ["Figma", "SaaS Dashboard UI", "Financial Analytics UX", "AI Assistant Interface", "Kanban Workflow", "Design System"],
+    highlights: {
+      ar: [
+        "لوحة مؤشرات مالية حية للإيرادات الشهرية والمصروفات",
+        "مساعد مالي ذكي Nexora AI يولد تقارير تحليلية تلقائية",
+        "بطاقة تفاعلية لإدارة المشاريع والمهام مع مستويات الأولوية",
+        "إدارة متطورة لمراحل المبيعات والعملاء Deals Pipeline",
+      ],
+      en: [
+        "Live financial dashboard tracking recurring MRR and team expenditures",
+        "Contextual AI business assistant generating instant audit summaries",
+        "Integrated multi-stage Kanban project board with priority indicators",
+        "End-to-end deal pipeline tracker with conversion percentage bars",
+      ],
+    },
+  },
+
+  // 21. UI/UX: MoveX
+  {
+    id: "uiux-movex",
+    title: {
+      ar: "MoveX (موف إكس) — تصميم تجربة مستخدم وتطبيق حجز وتوجيه سيارات الأجرة والأسطول",
+      en: "MoveX — On-Demand Ride Hailing, Fleet Dispatch & Live Map UI/UX",
+    },
+    category: "uiux",
+    secondaryCategory: "mobile",
+    featured: true,
+    imageUrl: "/images/uiux-movex.jpg",
+    summary: {
+      ar: "تصميم متكامل لمنظومة النقل الذكي يغطي تطبيق الراكب لاختيار الفئات والحجز السلس، تطبيق السائق للملاحة والأرباح، ولوحة تحكم مركزية Dispatcher لإدارة الأسطول المباشر وتتبع الخريطة الحرارية وأوقات الذروة.",
+      en: "Cohesive multi-device transportation design system uniting a passenger hailing app, a rugged driver navigation interface, and an operations dispatch center with real-time heatmaps.",
+    },
+    problem: {
+      ar: "تعقيد واجهات تطبيقات السائقين أثناء القيادة وتشتيت انتباههم، وافتقار مديري العمليات لرؤية مركزية لحركة الأسطول ومناطق الطلب المرتفع.",
+      en: "Drivers faced cluttered, distracting mobile interfaces during navigation, while dispatch managers lacked live situational awareness of fleet distribution and surge demand.",
+    },
+    solution: {
+      ar: "تصميم واجهة سائق عالية التباين ومبسطة تدعم السحب والإيماءات السريعة، مع واجهة راكب مريحة لحجز فئات السيارات، ولوحة إدارة أسطول تعرض الخريطة الحرارية المباشرة ومؤشرات الطلب.",
+      en: "Designed high-contrast, gesture-driven driver interfaces for safe navigation, intuitive vehicle tier selector for riders, and a live geospatial fleet dashboard for dispatch operators.",
+    },
+    myRole: {
+      ar: "مصمم واجهات وتجربة مستخدم (Mobility UX, Driver Safety Design, Dispatcher Dashboard).",
+      en: "Lead Mobility UI/UX Designer (Ergonomic driver interface, passenger checkout, fleet dispatch UI).",
+    },
+    technologies: ["Figma", "Ride Hailing UX", "Driver & Passenger Apps", "Fleet Dispatch Dashboard", "Live GPS Map UI", "Design Tokens"],
+    highlights: {
+      ar: [
+        "تطبيق راكب بتصميم أنيق لاختيار فئات السيارات (اقتصادي، مريح، فاخر)",
+        "واجهة سائق مبسطة بمؤشرات ملاحية واضحة وأرباح اليوم وتمرير للبدء",
+        "لوحة تحكم لإدارة الأسطول (الرحلات النشطة، السائقون المتاحون)",
+        "خريطة حرارية حية توضح أوقات ومناطق الذروة لتوزيع السيارات",
+      ],
+      en: [
+        "Passenger hailing experience with multi-tier vehicle selection (Eco, Comfort, VIP)",
+        "Distraction-free driver app with swipe-to-start gestures and daily earnings",
+        "Centralized fleet operations hub tracking hundreds of active vehicles",
+        "Real-time geographic surge heatmap assisting proactive fleet repositioning",
+      ],
+    },
+  },
+
+  // 22. UI/UX: PeopleAI HR
+  {
+    id: "uiux-peopleai",
+    title: {
+      ar: "PeopleAI HR (بيبل إيه آي) — تصميم واجهة ومنظومة الموارد البشرية والتوظيف الذكي",
+      en: "PeopleAI HR — AI-Powered HR & Recruitment Management System UI/UX",
+    },
+    category: "uiux",
+    secondaryCategory: "saas",
+    featured: true,
+    imageUrl: "/images/uiux-peopleai.jpg",
+    summary: {
+      ar: "تصميم منظومة متطورة للموارد البشرية والتوظيف؛ تشتمل على تطبيق هاتف للموظف لتسجيل الحضور الذكي بالنطاق الجغرافي (Geofencing)، تطبيق لمدير الموارد البشرية لإجراء المقابلات بالصوت، ولوحة تحكم ويب مركزية مع محرك توظيف بالذكاء الاصطناعي لتقييم السير الذاتية.",
+      en: "Holistic HR design system integrating an employee mobile app with geofenced clock-in, an HR manager app with speech-to-text interviews, and an executive web portal with AI resume matching.",
+    },
+    problem: {
+      ar: "الجهد اليدوي المضني في فرز مئات السير الذاتية، ومشاكل التحقق من حضور الموظفين الميدانيين، وصعوبة أرشفة وتلخيص مقابلات العمل.",
+      en: "HR teams spent excessive hours manually screening candidate resumes and lacked modern mobile tools for verified field employee attendance and structured interviews.",
+    },
+    solution: {
+      ar: "ابتكار واجهة مركزية تعرض محرك تقييم السير الذاتية التلقائي بنسب المطابقة (AI Match Score)، مع تطبيق هاتف يتيح تسجيل الحضور الجغرافي بلمسة واحدة، ونظام تحويل الصوت لنص للمقابلات.",
+      en: "Created an AI-driven recruitment dashboard with candidate matching percentages, paired with intuitive mobile attendance geofencing and structured voice-interview recording flows.",
+    },
+    myRole: {
+      ar: "مصمم منتج وأنظمة تجربة مستخدم (Enterprise HR UX, AI Recruitment Interfaces, Mobile Ergonomics).",
+      en: "Lead Product Designer (Enterprise HR Workflows, AI Scoring UX, Geofencing Mobile Interface).",
+    },
+    technologies: ["Figma", "HR Tech UX", "AI ATS & Matching UI", "Geofencing Mobile App", "Speech-to-Text Interview UX", "Enterprise Design System"],
+    highlights: {
+      ar: [
+        "محرك توظيف ذكي يعرض نسب مطابقة السيرة الذاتية ونقاط القوة والضعف",
+        "تطبيق موظف لتسجيل الحضور الذكي وفق النطاق الجغرافي (Geofencing)",
+        "تطبيق مدير HR لإدارة الإجازات والمقابلات بالذكاء الاصطناعي",
+        "رسوم بيانية تفاعلية لحضور الموظفين، معدل الإجازات، والتحليل المالي",
+      ],
+      en: [
+        "Automated AI candidate scoring dashboard displaying strengths and skill fit",
+        "Employee self-service mobile app with one-tap geofenced clock-in",
+        "HR manager portal featuring AI speech-to-text interview summaries",
+        "Interactive workforce telemetry detailing attendance and payroll distribution",
+      ],
+    },
+  },
 ];

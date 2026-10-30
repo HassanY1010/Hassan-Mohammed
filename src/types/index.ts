@@ -39,6 +39,7 @@ export interface ProjectItem {
   title: { ar: string; en: string };
   category: 'web' | 'mobile' | 'ai' | 'uiux' | 'saas';
   secondaryCategory?: 'web' | 'mobile' | 'ai' | 'uiux' | 'saas';
+  imageUrl?: string;
   summary: { ar: string; en: string };
   problem: { ar: string; en: string };
   solution: { ar: string; en: string };
