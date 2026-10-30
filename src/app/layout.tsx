@@ -13,12 +13,10 @@ export const metadata: Metadata = {
     template: `%s | ${PROFILE.displayName}`,
   },
   description:
-    'الموقع الشخصي للمهندس حسن بارفعه (Hassan Barafah) — مطور برمجيات ومهندس حلول رقمية، متخصص في Full Stack، دمج الذكاء الاصطناعي AI، تطبيقات الهواتف Flutter، وأمن الويب.',
+    'الموقع الشخصي للمهندس حسن محمد (Hassan Mohammed) — مطور برمجيات ومهندس حلول رقمية، متخصص في Full Stack، دمج الذكاء الاصطناعي AI، تطبيقات الهواتف Flutter، وأمن الويب.',
   keywords: [
-    'Hassan Barafah',
-    'Hassan Mohammed Barafah',
-    'حسن بارفعه',
-    'حسن محمد بارفعه',
+    'Hassan Mohammed',
+    'حسن محمد',
     'Full Stack Developer',
     'Full Stack Developer Yemen',
     'مطور برمجيات اليمن',
@@ -31,9 +29,9 @@ export const metadata: Metadata = {
     'SEO Specialist',
     'Software Engineer',
   ],
-  authors: [{ name: 'Hassan Mohammed Barafah', url: siteUrl }],
-  creator: 'Hassan Mohammed Barafah',
-  publisher: 'Hassan Mohammed Barafah',
+  authors: [{ name: 'Hassan Mohammed', url: siteUrl }],
+  creator: 'Hassan Mohammed',
+  publisher: 'Hassan Mohammed',
   formatDetection: {
     email: true,
     address: true,
@@ -46,7 +44,7 @@ export const metadata: Metadata = {
     url: siteUrl,
     title: `${PROFILE.displayName} | Full Stack Developer & AI Solutions Engineer`,
     description: PROFILE.tagline.ar,
-    siteName: 'Hassan Barafah Portfolio',
+    siteName: 'Hassan Mohammed Portfolio',
   },
   twitter: {
     card: 'summary_large_image',
@@ -93,7 +91,6 @@ export default function RootLayout({
     url: siteUrl,
     sameAs: [
       PROFILE.socials.github,
-      PROFILE.socials.linkedin,
       PROFILE.socials.whatsapp,
     ],
     knowsAbout: [
@@ -118,7 +115,7 @@ export default function RootLayout({
   const jsonLdWebsite = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    name: 'Hassan Barafah - Official Portfolio',
+    name: 'Hassan Mohammed - Official Portfolio',
     url: siteUrl,
     description: PROFILE.tagline.en,
     author: {

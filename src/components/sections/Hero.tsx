@@ -11,7 +11,6 @@ import {
   Terminal, 
   Sparkles, 
   Github, 
-  Linkedin, 
   Phone, 
   Mail,
   Layers,
@@ -148,15 +147,6 @@ export function Hero({ onOpenCv }: HeroProps) {
                 <Github className="w-4 h-4" />
               </a>
               <a
-                href={PROFILE.socials.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-slate-400 hover:text-blue-400 transition-colors"
-                aria-label="LinkedIn"
-              >
-                <Linkedin className="w-4 h-4" />
-              </a>
-              <a
                 href={PROFILE.socials.whatsapp}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -176,8 +166,35 @@ export function Hero({ onOpenCv }: HeroProps) {
 
           </div>
 
-          {/* Right Column: Interactive Terminal & Digital Architecture Card */}
-          <div className="lg:col-span-5">
+          {/* Right Column: Interactive Profile & Digital Architecture Card */}
+          <div className="lg:col-span-5 space-y-4">
+            
+            {/* Visual Profile Avatar Card */}
+            <div className="relative group mx-auto max-w-md lg:max-w-none p-4 rounded-2xl bg-slate-900/60 border border-slate-800/90 backdrop-blur-xl flex items-center gap-4 shadow-xl hover:border-cyan-500/40 transition-all">
+              <div className="relative shrink-0">
+                <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full p-[2px] bg-gradient-to-tr from-cyan-400 via-blue-500 to-purple-500 shadow-xl shadow-cyan-500/25">
+                  <img
+                    src={PROFILE.avatar}
+                    alt={PROFILE.fullName[lang]}
+                    className="w-full h-full object-cover rounded-full"
+                  />
+                </div>
+                <span className="absolute bottom-1 right-1 w-4 h-4 rounded-full bg-emerald-500 border-2 border-slate-950" title="Online" />
+              </div>
+              <div className="flex-1">
+                <div className="flex items-center gap-2">
+                  <h2 className="text-base sm:text-lg font-bold text-white">{PROFILE.fullName[lang]}</h2>
+                  <span className="px-2 py-0.5 rounded-full bg-cyan-950 border border-cyan-800 text-[10px] font-mono text-cyan-300">PRO</span>
+                </div>
+                <p className="text-xs text-cyan-400 font-mono mt-0.5">{PROFILE.primaryTitle}</p>
+                <div className="flex items-center gap-2 mt-2 text-[11px] text-slate-400">
+                  <span className="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+                  <span>{PROFILE.country[lang]} • {PROFILE.availability[lang]}</span>
+                </div>
+              </div>
+            </div>
+
+            {/* Terminal Card */}
             <div className="relative mx-auto max-w-md lg:max-w-none">
               
               {/* Outer decorative glow */}
@@ -192,7 +209,7 @@ export function Hero({ onOpenCv }: HeroProps) {
                     <span className="w-3 h-3 rounded-full bg-red-500/80 inline-block" />
                     <span className="w-3 h-3 rounded-full bg-yellow-500/80 inline-block" />
                     <span className="w-3 h-3 rounded-full bg-green-500/80 inline-block" />
-                    <span className="text-[11px] text-slate-400 font-mono ml-2">hassan@barafah-os: ~</span>
+                    <span className="text-[11px] text-slate-400 font-mono ml-2">hassan@mohammed-os: ~</span>
                   </div>
                   <div className="flex items-center gap-1.5 text-[10px] text-cyan-400">
                     <Sparkles className="w-3 h-3" />
@@ -211,7 +228,7 @@ export function Hero({ onOpenCv }: HeroProps) {
                       const <span className="text-white">engineer</span> = &#123;
                     </p>
                     <p className="pl-4 text-slate-300">
-                      name: <span className="text-emerald-400">&apos;Hassan Barafah&apos;</span>,
+                      name: <span className="text-emerald-400">&apos;Hassan Mohammed&apos;</span>,
                     </p>
                     <p className="pl-4 text-slate-300">
                       origin: <span className="text-emerald-400">&apos;Yemen&apos;</span>,

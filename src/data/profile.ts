@@ -2,10 +2,11 @@ import { SocialLinks } from '@/types';
 
 export const PROFILE = {
   fullName: {
-    ar: "حسن محمد بارفعه",
-    en: "Hassan Mohammed Barafah",
+    ar: "حسن محمد",
+    en: "Hassan Mohammed",
   },
-  displayName: "Hassan Barafah",
+  displayName: "Hassan Mohammed",
+  avatar: "/images/hassan.jpg",
   country: {
     ar: "اليمن",
     en: "Yemen",
@@ -33,19 +34,18 @@ export const PROFILE = {
   },
   aboutParagraphs: {
     ar: [
-      "أنا حسن بارفعه، مطور برمجيات ومهندس حلول رقمية من اليمن، أعمل على تطوير الحلول الرقمية المتكاملة وبناء مواقع وتطبيقات وأنظمة حديثة تجمع بين التصميم الاحترافي والهندسة البرمجية الدقيقة.",
+      "أنا حسن محمد، مطور برمجيات ومهندس حلول رقمية من اليمن، أعمل على تطوير الحلول الرقمية المتكاملة وبناء مواقع وتطبيقات وأنظمة حديثة تجمع بين التصميم الاحترافي والهندسة البرمجية الدقيقة.",
       "أهتم بتفاصيل المنتج الرقمي من جميع الجوانب، بداية من فهم احتياجات المستخدم وتحليل المشروع، مرورًا بتصميم واجهات الاستخدام وتطوير الأنظمة وقواعد البيانات، وصولًا إلى تحسين الأداء والأمان وتجربة المستخدم ومحركات البحث.",
       "أؤمن بأن المنتج البرمجي الناجح لا يعتمد على كتابة الكود فقط، بل على بناء حل متكامل قابل للاستخدام والتطوير والتوسع يخدم أهداف العميل الحقيقية ويصمد أمام متطلبات المستقبل."
     ],
     en: [
-      "I am Hassan Barafah, a software developer and digital solutions engineer from Yemen, dedicated to building cohesive modern web applications, scalable platforms, and mobile apps that unite refined design with rock-solid engineering.",
+      "I am Hassan Mohammed, a software developer and digital solutions engineer from Yemen, dedicated to building cohesive modern web applications, scalable platforms, and mobile apps that unite refined design with rock-solid engineering.",
       "I attend to every dimension of the digital product lifecycle—from user discovery and domain analysis, to high-fidelity UI/UX design, resilient backend architecture, database modeling, and uncompromising focus on performance, security, and SEO.",
       "I believe that truly successful software isn't just about syntax—it is about crafting an intuitive, reliable, maintainable solution that empowers users and delivers sustainable long-term business value."
     ],
   },
   socials: {
     github: "https://github.com/HassanY1010",
-    linkedin: "https://linkedin.com/in/hassan-mohammed-745a28412",
     whatsapp: "https://wa.me/967776461892",
     email: "hassanmohammedbarafah836@gmail.com",
     whatsappDisplay: "+967 776 461 892",
@@ -55,4 +55,3 @@ export const PROFILE = {
     en: "Available for new projects & contracts",
   },
 };
-

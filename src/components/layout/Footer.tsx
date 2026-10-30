@@ -48,7 +48,7 @@ export function Footer() {
               <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 to-cyan-400 p-[1px] shadow-lg shadow-cyan-500/20">
                 <div className="w-full h-full bg-slate-950 rounded-[11px] flex items-center justify-center">
                   <span className="font-mono font-bold text-sm bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
-                    HB
+                    HM
                   </span>
                 </div>
               </div>
@@ -81,15 +81,6 @@ export function Footer() {
                 aria-label="GitHub Profile"
               >
                 <Github className="w-4 h-4" />
-              </a>
-              <a
-                href={PROFILE.socials.linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2.5 rounded-lg bg-slate-900 hover:bg-slate-800 text-slate-300 hover:text-blue-400 border border-slate-800 transition-colors"
-                aria-label="LinkedIn Profile"
-              >
-                <Linkedin className="w-4 h-4" />
               </a>
               <a
                 href={PROFILE.socials.whatsapp}

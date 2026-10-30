@@ -4,7 +4,6 @@ export type Theme = 'dark' | 'light';
 
 export interface SocialLinks {
   github: string;
-  linkedin: string;
   whatsapp: string;
   email: string;
 }

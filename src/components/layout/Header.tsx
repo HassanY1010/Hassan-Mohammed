@@ -84,12 +84,12 @@ export function Header({ onOpenCv }: HeaderProps) {
             href="#home"
             onClick={(e) => handleNavClick(e, '#home')}
             className="group flex items-center gap-2.5 focus:outline-none"
-            aria-label="Hassan Barafah Home"
+            aria-label="Hassan Mohammed Home"
           >
             <div className="w-9 h-9 rounded-xl bg-gradient-to-tr from-blue-600 via-cyan-500 to-blue-400 p-[1px] shadow-lg shadow-cyan-500/20 group-hover:shadow-cyan-500/40 transition-shadow">
               <div className="w-full h-full bg-slate-950 rounded-[11px] flex items-center justify-center">
                 <span className="font-mono font-bold text-sm bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
-                  HB
+                  HM
                 </span>
               </div>
             </div>

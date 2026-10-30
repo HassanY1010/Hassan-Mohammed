@@ -73,11 +73,22 @@ export function About() {
           {/* Main Narrative Card */}
           <div className="lg:col-span-7 glass-panel p-8 sm:p-10 rounded-2xl border border-slate-800/80 shadow-xl flex flex-col justify-between space-y-6">
             <div className="space-y-4">
-              <div className="flex items-center gap-3 pb-3 border-b border-slate-800">
-                <span className="w-3 h-3 rounded-full bg-cyan-400" />
-                <span className="text-xs font-mono text-cyan-400 uppercase tracking-widest">
-                  Engineering Profile • Hassan Barafah
-                </span>
+              <div className="flex items-center gap-4 pb-4 border-b border-slate-800">
+                <div className="w-14 h-14 rounded-full p-0.5 bg-gradient-to-tr from-cyan-400 to-blue-600 shadow-md shadow-cyan-500/20 shrink-0">
+                  <img
+                    src={PROFILE.avatar}
+                    alt={PROFILE.fullName[lang]}
+                    className="w-full h-full object-cover rounded-full"
+                  />
+                </div>
+                <div>
+                  <span className="text-xs font-mono text-cyan-400 uppercase tracking-widest block">
+                    Engineering Profile • {PROFILE.fullName[lang]}
+                  </span>
+                  <span className="text-xs text-slate-400 font-mono">
+                    {PROFILE.primaryTitle}
+                  </span>
+                </div>
               </div>
 
               {PROFILE.aboutParagraphs[lang].map((para, idx) => (

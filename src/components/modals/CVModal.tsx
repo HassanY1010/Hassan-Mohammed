@@ -5,7 +5,7 @@ import { useLanguage } from '@/context/LanguageContext';
 import { PROFILE } from '@/data/profile';
 import { EXPERTISE_LIST } from '@/data/expertise';
 import { SKILL_CATEGORIES } from '@/data/skills';
-import { X, Printer, Mail, Phone, MapPin, Globe, Github, Linkedin, ExternalLink } from 'lucide-react';
+import { X, Printer, Mail, Phone, MapPin, Globe, Github, ExternalLink } from 'lucide-react';
 
 interface CVModalProps {
   isOpen: boolean;
@@ -77,36 +77,41 @@ export function CVModal({ isOpen, onClose }: CVModalProps) {
         {/* Printable CV Content */}
         <div className="space-y-8 print:space-y-6 text-slate-300 print:text-black">
           {/* Header */}
-          <div className="border-b border-slate-800/80 pb-6 print:border-slate-300">
-            <h1 className="text-3xl font-extrabold text-white print:text-black tracking-tight">
-              {PROFILE.fullName[lang]}
-            </h1>
-            <p className="text-base sm:text-lg font-medium text-cyan-400 print:text-blue-700 mt-1">
-              {PROFILE.primaryTitle}
-            </p>
-            <p className="text-sm text-slate-400 print:text-slate-600 mt-2 flex items-center gap-2">
-              <MapPin className="w-4 h-4 text-slate-500 inline" />
-              <span>{PROFILE.country[lang]} • {PROFILE.availability[lang]}</span>
-            </p>
+          <div className="border-b border-slate-800/80 pb-6 print:border-slate-300 flex flex-col sm:flex-row items-center sm:items-start gap-5">
+            <div className="relative shrink-0 w-24 h-24 rounded-full p-1 bg-gradient-to-tr from-blue-600 via-cyan-400 to-blue-500 shadow-xl shadow-cyan-500/20">
+              <img
+                src={PROFILE.avatar}
+                alt={PROFILE.fullName[lang]}
+                className="w-full h-full object-cover rounded-full"
+              />
+            </div>
+            <div className="flex-1 text-center sm:text-start">
+              <h1 className="text-3xl font-extrabold text-white print:text-black tracking-tight">
+                {PROFILE.fullName[lang]}
+              </h1>
+              <p className="text-base sm:text-lg font-medium text-cyan-400 print:text-blue-700 mt-1">
+                {PROFILE.primaryTitle}
+              </p>
+              <p className="text-sm text-slate-400 print:text-slate-600 mt-1.5 flex items-center justify-center sm:justify-start gap-2">
+                <MapPin className="w-4 h-4 text-slate-500 inline" />
+                <span>{PROFILE.country[lang]} • {PROFILE.availability[lang]}</span>
+              </p>
 
-            {/* Contact Row */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 mt-4 text-xs text-slate-300 print:text-slate-800">
-              <a href={`mailto:${PROFILE.socials.email}`} className="flex items-center gap-2 hover:text-cyan-400">
-                <Mail className="w-3.5 h-3.5 text-blue-400" />
-                <span className="truncate">{PROFILE.socials.email}</span>
-              </a>
-              <a href={PROFILE.socials.whatsapp} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-emerald-400">
-                <Phone className="w-3.5 h-3.5 text-emerald-400" />
-                <span>{PROFILE.socials.whatsappDisplay}</span>
-              </a>
-              <a href={PROFILE.socials.linkedin} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-blue-400">
-                <Linkedin className="w-3.5 h-3.5 text-blue-400" />
-                <span>LinkedIn Profile</span>
-              </a>
-              <a href={PROFILE.socials.github} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-slate-100">
-                <Github className="w-3.5 h-3.5 text-slate-400" />
-                <span>github.com/HassanY1010</span>
-              </a>
+              {/* Contact Row */}
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 mt-4 text-xs text-slate-300 print:text-slate-800">
+                <a href={`mailto:${PROFILE.socials.email}`} className="flex items-center justify-center sm:justify-start gap-2 hover:text-cyan-400">
+                  <Mail className="w-3.5 h-3.5 text-blue-400 shrink-0" />
+                  <span className="truncate">{PROFILE.socials.email}</span>
+                </a>
+                <a href={PROFILE.socials.whatsapp} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center sm:justify-start gap-2 hover:text-emerald-400">
+                  <Phone className="w-3.5 h-3.5 text-emerald-400 shrink-0" />
+                  <span>{PROFILE.socials.whatsappDisplay}</span>
+                </a>
+                <a href={PROFILE.socials.github} target="_blank" rel="noopener noreferrer" className="flex items-center justify-center sm:justify-start gap-2 hover:text-slate-100">
+                  <Github className="w-3.5 h-3.5 text-slate-400 shrink-0" />
+                  <span>github.com/HassanY1010</span>
+                </a>
+              </div>
             </div>
           </div>
 

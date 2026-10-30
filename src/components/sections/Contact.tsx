@@ -8,7 +8,6 @@ import {
   Send, 
   Mail, 
   Phone, 
-  Linkedin, 
   Github, 
   MapPin, 
   CheckCircle2, 
@@ -148,26 +147,6 @@ export function Contact({ selectedService }: ContactProps) {
                     </span>
                     <span className="text-[11px] font-mono text-slate-400">
                       {PROFILE.socials.whatsappDisplay}
-                    </span>
-                  </div>
-                </a>
-
-                {/* LinkedIn */}
-                <a
-                  href={PROFILE.socials.linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-start gap-3 p-3.5 rounded-xl bg-slate-950/70 border border-slate-800/80 hover:border-blue-500/40 transition-colors group"
-                >
-                  <div className="p-2 rounded-lg bg-blue-950/70 text-blue-400 group-hover:text-blue-300">
-                    <Linkedin className="w-4 h-4" />
-                  </div>
-                  <div>
-                    <span className="text-xs font-semibold text-slate-300 group-hover:text-blue-300 block">
-                      {t('contact.linkedinDirect')}
-                    </span>
-                    <span className="text-[11px] font-mono text-slate-400">
-                      linkedin.com/in/hassan-mohammed-745a28412
                     </span>
                   </div>
                 </a>
