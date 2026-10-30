@@ -277,3 +277,4 @@ export function Hero({ onOpenCv }: HeroProps) {
     </section>
   );
 }
+

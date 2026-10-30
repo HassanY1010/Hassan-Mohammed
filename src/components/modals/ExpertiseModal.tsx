@@ -152,3 +152,4 @@ export function ExpertiseModal({ item, onClose }: ExpertiseModalProps) {
     </div>
   );
 }
+

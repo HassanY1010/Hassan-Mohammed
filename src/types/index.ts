@@ -39,6 +39,7 @@ export interface ProjectItem {
   id: string;
   title: { ar: string; en: string };
   category: 'web' | 'mobile' | 'ai' | 'uiux' | 'saas';
+  secondaryCategory?: 'web' | 'mobile' | 'ai' | 'uiux' | 'saas';
   summary: { ar: string; en: string };
   problem: { ar: string; en: string };
   solution: { ar: string; en: string };
@@ -67,3 +68,4 @@ export interface ProcessStep {
   deliverables: { ar: string[]; en: string[] };
   icon: string;
 }
+

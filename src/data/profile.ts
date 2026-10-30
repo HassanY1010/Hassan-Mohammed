@@ -55,3 +55,4 @@ export const PROFILE = {
     en: "Available for new projects & contracts",
   },
 };
+

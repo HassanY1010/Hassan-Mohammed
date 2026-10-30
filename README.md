@@ -112,3 +112,4 @@ npm run build
 2. سجّل الدخول إلى [Vercel](https://vercel.com) واختر **Import Project**.
 3. اختر المستودع واضغط **Deploy**.
 4. سيتم بناء الموقع ونشره عالمياً على شبكة Vercel Edge Network مع تفعيل شهادة SSL وتحديثات سريعة عند أي تعديل.
+

@@ -238,3 +238,4 @@ export function Header({ onOpenCv }: HeaderProps) {
     </header>
   );
 }
+
