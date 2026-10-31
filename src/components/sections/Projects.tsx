@@ -22,7 +22,8 @@ import {
   ZoomIn,
   Palette,
   TrendingUp,
-  Search
+  Search,
+  Bot
 } from 'lucide-react';
 
 export function Projects() {
@@ -43,6 +44,7 @@ export function Projects() {
     ai: 4,
     uiux: 5,
     seo: 6,
+    bots: 7,
   };
 
   const filterTabs = [
@@ -53,6 +55,7 @@ export function Projects() {
     { id: 'ai', label: t('projects.filterAi') },
     { id: 'uiux', label: t('projects.filterUiux') },
     { id: 'seo', label: t('projects.filterSeo') },
+    { id: 'bots', label: t('projects.filterBots') },
   ];
 
   const filteredProjects = activeCategory === 'all'
@@ -65,6 +68,7 @@ export function Projects() {
 
   const getCategoryIcon = (category: string) => {
     switch (category) {
+      case 'bots': return <Bot className="w-3.5 h-3.5 text-cyan-400" />;
       case 'seo': return <TrendingUp className="w-3.5 h-3.5 text-emerald-400" />;
       case 'web': return <Layers className="w-3.5 h-3.5 text-blue-400" />;
       case 'mobile': return <Smartphone className="w-3.5 h-3.5 text-cyan-400" />;
@@ -77,6 +81,10 @@ export function Projects() {
 
   const isPlayStoreUrl = (url?: string) => {
     return url && url.includes('play.google.com');
+  };
+
+  const isTelegramUrl = (url?: string) => {
+    return url && (url.includes('t.me') || url.includes('telegram.me'));
   };
 
   return (
@@ -173,6 +181,11 @@ export function Projects() {
                         <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-emerald-500/20 border border-emerald-500/40 text-[10px] font-semibold text-emerald-300">
                           <TrendingUp className="w-3 h-3 text-emerald-400" />
                           {lang === 'ar' ? 'تصدر نتائج Google #1' : '#1 Google SEO'}
+                        </span>
+                      ) : project.category === 'bots' ? (
+                        <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-cyan-500/20 border border-cyan-500/40 text-[10px] font-semibold text-cyan-300">
+                          <Bot className="w-3 h-3 text-cyan-400" />
+                          {lang === 'ar' ? 'بوت وأتمتة ذكية' : 'Smart Bot & Automation'}
                         </span>
                       ) : project.featured ? (
                         <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-blue-600/30 border border-blue-500/50 text-[10px] font-semibold text-blue-300">
@@ -271,6 +284,11 @@ export function Projects() {
                       <>
                         <Play className="w-3.5 h-3.5 text-emerald-400" />
                         <span>Google Play Store</span>
+                      </>
+                    ) : isTelegramUrl(project.liveUrl) ? (
+                      <>
+                        <Bot className="w-3.5 h-3.5 text-cyan-400" />
+                        <span>{lang === 'ar' ? 'تشغيل البوت على Telegram' : 'Launch Telegram Bot'}</span>
                       </>
                     ) : (
                       <>

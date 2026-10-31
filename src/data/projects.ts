@@ -651,6 +651,49 @@ export const PROJECTS_LIST: ProjectItem[] = [
     },
   },
 
+  // 12. DropOver – Food Delivery
+  {
+    id: "dropover-food-delivery",
+    title: {
+      ar: "DropOver — تطبيق توصيل الطعام والبقالة وتقسيم الفواتير",
+      en: "DropOver — Food Delivery, Groceries & Bill Splitting",
+    },
+    category: "mobile",
+    featured: true,
+    summary: {
+      ar: "تطبيق هاتف متكامل لتوصيل وجبات الطعام من المطاعم، توصيل البقالة والمستلزمات، إرسال الشحنات والطرود، مع تتبع مباشر عبر الخريطة، ودعم الدفع المتعدد (نقداً، بطاقات، محافظ رقمية)، وميزة حصرية لتقسيم الفاتورة بين الأصدقاء.",
+      en: "All-in-one on-demand delivery app for restaurant food, supermarket groceries, and courier services, featuring real-time GPS tracking, multi-channel payments, and social bill-splitting.",
+    },
+    problem: {
+      ar: "تعقيد إدارة طلبات المجموعات وصعوبة حساب نصيب كل شخص عند طلب الطعام مع الأصدقاء، بالإضافة إلى تشتت خدمات توصيل الوجبات والبقالة والشحنات بين تطبيقات مختلفة.",
+      en: "Ordering meals in groups led to awkward manual expense calculations, while users lacked a unified on-demand ecosystem handling food, groceries, and courier tasks with flexible payments.",
+    },
+    solution: {
+      ar: "تطوير تطبيق موبايل متقدم يوفر تجربة طلب سلسة، مع نظام تتبع GPS حي لمسار المندوب، وتطبيق خوارزمية ذكية لتقسيم الفاتورة (Split Bill) بين الأصدقاء، ودعم خيارات دفع متعددة.",
+      en: "Engineered an intuitive mobile application with instant checkout, live GPS courier tracking, dynamic bill-splitting logic, and multi-gateway digital payments.",
+    },
+    myRole: {
+      ar: "مطور تطبيقات الموبايل وتجربة المستخدم (تطوير ميزات تتبع الخرائط الحية، خوارزمية تقسيم الفاتورة، وربط بوابات الدفع والمحافظ الإلكترونية).",
+      en: "Mobile App Developer (Live map tracking, dynamic split-bill algorithm, payment gateway integration, responsive UI).",
+    },
+    technologies: ["Flutter", "Android", "Google Maps API", "Real-Time Tracking", "Multi-Payment Gateway", "Bill Splitting", "Mobile UX"],
+    liveUrl: "https://play.google.com/store/apps/details?id=com.dropover&utm_source",
+    highlights: {
+      ar: [
+        "طلب الوجبات الساخنة من المطاعم وتوصيل سريع لمشتريات البقالة والطرود",
+        "ميزة ذكية لتقسيم الفاتورة (Split Bill) بين الأصدقاء بكل دقة وسهولة",
+        "تتبع حي وفوري لحركة المندوب ومسار التوصيل على الخريطة",
+        "خيارات دفع مرنة ومتعددة: الدفع نقداً، البطاقات الائتمانية، والمحافظ الرقمية",
+      ],
+      en: [
+        "Seamless restaurant food ordering, grocery delivery, and courier shipping in one app",
+        "Automated group bill-splitting feature distributing amounts effortlessly among friends",
+        "Live GPS tracking mapping delivery progress and estimated arrival times",
+        "Comprehensive payment methods: Cash on delivery, credit cards, and digital wallets",
+      ],
+    },
+  },
+
   // 12. Ziarah.ai
   {
     id: "ziarah-ai",
@@ -1128,6 +1171,96 @@ export const PROJECTS_LIST: ProjectItem[] = [
         "Employee self-service mobile app with one-tap geofenced clock-in",
         "HR manager portal featuring AI speech-to-text interview summaries",
         "Interactive workforce telemetry detailing attendance and payroll distribution",
+      ],
+    },
+  },
+
+  // 23. Combot
+  {
+    id: "combot-automation",
+    title: {
+      ar: "Combot — بوت ومنظومة إدارة وأتمتة المجموعات والمجتمعات",
+      en: "Combot — Telegram Group Community Management & Automation Engine",
+    },
+    category: "bots",
+    secondaryCategory: "saas",
+    featured: true,
+    summary: {
+      ar: "منظومة بوت وأتمتة شاملة لإدارة المجموعات؛ توفر الردود التلقائية الذكية، الحماية ومكافحة السبام، إدارة وترقية الأعضاء، جدولة المنشورات الدورية، تحليلات النشاط المتقدمة، وبناء قواعد أتمتة كاملة بدون الحاجة لكتابة كود (No-Code Rules).",
+      en: "Enterprise-grade community management bot and automation platform providing smart automated replies, anti-spam shields, member moderation, scheduled broadcasting, and no-code automation rules.",
+    },
+    problem: {
+      ar: "صعوبة إدارة المجموعات الكبيرة يدويًا، تعرض المجتمعات لهجمات السبام والإعلانات المزعجة، والحاجة للرد الفوري على استفسارات آلاف الأعضاء دون انقطاع.",
+      en: "Community moderators struggled to monitor high-volume group chats manually, leading to spam floods, missed member inquiries, and inconsistent rule enforcement.",
+    },
+    solution: {
+      ar: "هندسة بوت فائق السرعة يعتمد على قواعد أتمتة مرنة، وفلاتر حماية ذكية تعترض السبام والروابط الضارة في أجزاء من الثانية، مع محرك تحليلات يرصد نشاط وتفاعل الأعضاء.",
+      en: "Architected a high-throughput moderation bot engine with real-time heuristic spam detection, customizable trigger-action workflows, and visual engagement analytics.",
+    },
+    myRole: {
+      ar: "مهندس برمجيات وتطوير البوتات والأتمتة (هندسة قواعد الأتمتة، معالجة تدفق الرسائل الفوري، وأنظمة الحماية والتحليلات).",
+      en: "Bot & Automation Software Engineer (Automation rule triggers, high-concurrency event handling, anti-spam heuristic algorithms).",
+    },
+    technologies: ["Telegram Bot API", "Automation Rules", "Anti-Spam Heuristics", "Event-Driven Architecture", "Community Moderation", "Activity Analytics"],
+    liveUrl: "https://combot.org/",
+    highlights: {
+      ar: [
+        "نظام متقدم للردود التلقائية الفورية والموجهة حسب الكلمات المفتاحية",
+        "حماية صارمة ومكافحة تلقائية لرسائل السبام والإعلانات والحسابات الوهمية",
+        "إدارة هرمية دقيقة لأعضاء المجموعات والصلاحيات والعقوبات المؤتمتة",
+        "جدولة المنشورات الدورية وبناء قواعد أتمتة مخصصة دون الحاجة لبرمجة",
+        "لوحة إحصائيات متكاملة لتحليل تفاعل الأعضاء ومعدلات نمو المجتمع",
+      ],
+      en: [
+        "Keyword-triggered instant automated messaging workflows",
+        "High-accuracy automated anti-spam and malicious link interception",
+        "Hierarchical member permissions and automated disciplinary actions",
+        "Periodic message broadcasting and visual no-code rule builder",
+        "Comprehensive telemetry monitoring community engagement and growth trends",
+      ],
+    },
+  },
+
+  // 24. Hotel Robot
+  {
+    id: "hotel-robot",
+    title: {
+      ar: "Hotel Robot — بوت المساعد الذكي للبحث عن الفنادق والحجوزات",
+      en: "Hotel Robot — Smart Telegram Hotel Discovery & Booking Assistant",
+    },
+    category: "bots",
+    secondaryCategory: "ai",
+    featured: true,
+    summary: {
+      ar: "بوت تفاعلي ذكي على منصة تليجرام يساعد المسافرين في البحث السريع عن الفنادق، اختيار المدن والوجهات السياحية، استكشاف ومقارنة خيارات الإقامة والأسعار، والمساعدة خطوة بخطوة في إتمام الحجز بكل سهولة وسرعة.",
+      en: "Conversational Telegram booking bot assisting travelers with instant hotel searches, city destination selection, accommodation comparisons, and guided reservation workflows.",
+    },
+    problem: {
+      ar: "بطء مواقع حجز الفنادق التقليدية واستهلاكها لبيانات الإنترنت، وصعوبة قيام المسافر بالبحث السريع والمقارنة بين خيارات الإقامة أثناء التنقل.",
+      en: "Conventional hotel booking portals are often data-heavy and sluggish on mobile connections, making rapid on-the-go hotel comparisons cumbersome for travelers.",
+    },
+    solution: {
+      ar: "بناء بوت محادثة خفيف وتفاعلي عبر Telegram Bot API، يتيح للمستخدم تحديد المدينة وتواريخ الإقامة عبر أزرار تفاعلية (Inline Keyboards) واستعراض أفضل العروض المتاحة وحجزها بلحظات.",
+      en: "Developed an ultra-fast, conversational Telegram bot leveraging interactive inline keyboards to filter cities, dates, and budget tiers with real-time hotel pricing.",
+    },
+    myRole: {
+      ar: "مطور بوتات وواجهات المحادثة التفاعلية (تصميم تدفق المحادثة، ربط بيانات الفنادق، وبناء واجهات الأزرار التفاعلية).",
+      en: "Conversational Bot Developer (Dialogue tree design, Telegram Inline UX, hotel search API integration).",
+    },
+    technologies: ["Telegram Bot API", "Conversational AI", "Interactive Inline Keyboards", "Node.js", "Hotel Search Engine", "Webhook Architecture"],
+    liveUrl: "https://t.me/Hotelrobo",
+    highlights: {
+      ar: [
+        "بحث فوري وفائق السرعة عن الفنادق المتاحة بمجرد إرسال اسم المدينة أو الموقع",
+        "قوائم تفاعلية مرنة (Inline Menus) لاختيار تواريخ الوصول والمغادرة وعدد النزلاء",
+        "استعراض شامل لخيارات الإقامة مع الصور والأسعار ومراجعات النزلاء",
+        "مساعدة ذكية وتوجيه مباشر لإتمام عملية الحجز بأقل الخطوات الممكنة",
+      ],
+      en: [
+        "Instant hotel lookup based on destination city or geo-coordinates",
+        "Seamless interactive Telegram menus for selecting travel dates and guest counts",
+        "Visual stay cards featuring high-res photos, verified pricing, and amenities",
+        "Guided step-by-step assistant directing guests toward confirmed reservations",
       ],
     },
   },
