@@ -36,18 +36,31 @@ export function Projects() {
     return PROJECTS_LIST.filter(p => p.category === catId || p.secondaryCategory === catId).length;
   };
 
+  const categoryOrder: Record<string, number> = {
+    web: 1,
+    mobile: 2,
+    saas: 3,
+    ai: 4,
+    uiux: 5,
+    seo: 6,
+  };
+
   const filterTabs = [
     { id: 'all', label: t('projects.filterAll') },
-    { id: 'seo', label: t('projects.filterSeo') },
-    { id: 'uiux', label: t('projects.filterUiux') },
-    { id: 'saas', label: t('projects.filterSaas') },
     { id: 'web', label: t('projects.filterWeb') },
     { id: 'mobile', label: t('projects.filterMobile') },
+    { id: 'saas', label: t('projects.filterSaas') },
     { id: 'ai', label: t('projects.filterAi') },
+    { id: 'uiux', label: t('projects.filterUiux') },
+    { id: 'seo', label: t('projects.filterSeo') },
   ];
 
   const filteredProjects = activeCategory === 'all'
-    ? PROJECTS_LIST
+    ? [...PROJECTS_LIST].sort((a, b) => {
+        const orderA = categoryOrder[a.category] || 99;
+        const orderB = categoryOrder[b.category] || 99;
+        return orderA - orderB;
+      })
     : PROJECTS_LIST.filter(p => p.category === activeCategory || p.secondaryCategory === activeCategory);
 
   const getCategoryIcon = (category: string) => {
