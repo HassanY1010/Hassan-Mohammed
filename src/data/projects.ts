@@ -260,6 +260,54 @@ export const PROJECTS_LIST: ProjectItem[] = [
     },
   },
 
+  // --- Web Applications ---
+  // 1. Adminium POS
+  {
+    id: "adminium-pos",
+    title: {
+      ar: "Adminium POS — منظومة نقاط البيع الذكية للمطاعم والكافيهات",
+      en: "Adminium POS — Interactive Point of Sale System for Restaurants & Cafes",
+    },
+    category: "web",
+    featured: true,
+    summary: {
+      ar: "منظومة نقاط بيع (POS) تفاعلية ومفتوحة المصدر للمطاعم والمقاهي؛ تتضمن تسجيل دخول الموظفين بـ PIN، إدارة الطاولات والقاعات، بناء الطلبات والتعديلات، تقسيم الفواتير والدفع المرن، محاكي الدفع بالبطاقات، شاشة المطبخ (KDS)، شاشة العميل، وبطاقات الهدايا وبرامج الولاء. مبنية بالكامل بـ Vite و React و TypeScript دون الحاجة لخادم خلفي.",
+      en: "A comprehensive, open-source Point of Sale (POS) system for restaurants and cafes featuring staff PIN login, visual floor plan & table states, order customization with modifiers, multi-split payments, simulated EMV card reader, Kitchen Display System (KDS), customer-facing display, pickup queues, and gift card/loyalty reward programs. Built with Vite, React, and TypeScript running entirely client-side.",
+    },
+    problem: {
+      ar: "تعقيد وبطء أنظمة الكاشير التقليدية في أوقات الذروة، صعوبة تخصيص الطلبات المعقدة (الإضافات والأحجام)، بطء تقسيم الفواتير بين الضيوف، وانفصال شاشة الكاشير عن إدارة المطبخ والطلبات الخارجية.",
+      en: "Traditional restaurant POS terminals are rigid, slow during peak rushes, clunky at handling intricate order modifiers and split bills, and poorly synchronized with kitchen displays and customer screens.",
+    },
+    solution: {
+      ar: "تطوير واجهة كاشير عصرية فائقة السرعة والاستجابة، تدعم التبديل بين وضعي المطاعم (Restaurant) والتجزئة (Retail)، تقسيم الحسابات بدقة حسابية للمليم، نظام KDS لمتابعة تجهيز الطلبات، مسار استلام الطلبات (Pickup)، وتوافق تام مع مختلف الأجهزة واللغات والثيمات.",
+      en: "Engineered an ultra-fast, responsive web POS supporting both Restaurant and Retail workflows, cent-exact multi-ledger payment splits, interactive Kitchen Display bump flows, customer-facing tip/signature displays, and offline-first client architecture with multi-language and theme toggling.",
+    },
+    myRole: {
+      ar: "مهندس واجهات أمامية ومطور برمجيات Full Stack (تطوير منظومة الـ POS، شاشات الكاشير والمطبخ والعميل، ومنطق الحسابات والمدفوعات المتعددة).",
+      en: "Lead Frontend & Web Applications Engineer (POS architecture, KDS & customer displays, complex state machines, and precise financial calculation logic).",
+    },
+    technologies: ["React", "TypeScript", "Vite", "Point of Sale (POS)", "Kitchen Display System (KDS)", "Tailwind CSS", "Financial & Split Billing", "Web Architecture"],
+    liveUrl: "https://adminium.dev/demo/point-of-sale",
+    highlights: {
+      ar: [
+        "شاشة كاشير سريعة مع فلاتر الأصناف وتخصيص دقيق للمعدلات (Modifiers) والإضافات والملاحظات",
+        "تقسيم مرن ومتعدد للفواتير (Split Payments) مع دعم الدفع النقدي والبطاقات وبطاقات الهدايا",
+        "شاشة عرض المطبخ (Kitchen Display System - KDS) بثلاث مسارات لتنظيم تدفق الطلبات لحظياً",
+        "شاشة مخصصة للعميل (Customer Display) لعرض تفاصيل الطلب، الإكرامية، التوقيع، وخيارات الإيصال",
+        "مخطط تفاعلي للطاولات (Floor Plan) والتحكم بحالات المقاعد وتعديل الطلبات المعلقة",
+        "دعم وضعين للخدمة (Restaurant & Retail) وتعدد اللغات وتغيير المظهر (Light/Dark Themes)",
+      ],
+      en: [
+        "High-velocity register with category filters, composite item merging, and live modifier sheets",
+        "Advanced split-payment engine supporting cash change, simulated card terminal, and gift cards",
+        "Three-column interactive Kitchen Display System (KDS) bump flow with all-day aggregate view",
+        "Guest customer display for order review, custom tip entry, digital signature, and receipt preferences",
+        "Visual floor plan management with live table occupancy states and hold/send workflows",
+        "Dual Restaurant & Retail service modes with multi-language support and dynamic theme switching",
+      ],
+    },
+  },
+
   // 3. ShopKart
   {
     id: "shopkart-ecommerce",
