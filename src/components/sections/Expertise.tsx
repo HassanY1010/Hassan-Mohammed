@@ -40,7 +40,7 @@ export function Expertise() {
   };
 
   return (
-    <section id="expertise" className="py-24 relative overflow-hidden bg-slate-950">
+    <section id="expertise" className="py-24 relative overflow-hidden bg-white dark:bg-slate-950 transition-colors duration-300">
       {/* Background ambient lighting */}
       <div className="absolute top-1/3 -right-32 w-96 h-96 bg-cyan-600/10 rounded-full blur-[130px] pointer-events-none" />
       <div className="absolute bottom-10 left-10 w-96 h-96 bg-blue-600/10 rounded-full blur-[130px] pointer-events-none" />
@@ -49,14 +49,14 @@ export function Expertise() {
         
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-950/60 border border-blue-800/40 text-cyan-400 text-xs font-semibold mb-3">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 dark:bg-blue-950/60 border border-blue-200 dark:border-blue-800/40 text-blue-600 dark:text-cyan-400 text-xs font-semibold mb-3">
             <Briefcase className="w-3.5 h-3.5" />
             <span>{t('expertise.sectionTitle')}</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
             {t('expertise.title')}
           </h2>
-          <p className="mt-3 text-base text-slate-400">
+          <p className="mt-3 text-base text-slate-600 dark:text-slate-400">
             {t('expertise.subtitle')}
           </p>
         </div>
@@ -66,24 +66,24 @@ export function Expertise() {
           {EXPERTISE_LIST.map((item, idx) => (
             <div
               key={item.id}
-              className="group relative rounded-2xl bg-slate-900/40 border border-slate-800/90 hover:border-cyan-500/50 p-6 flex flex-col justify-between transition-all duration-300 hover:shadow-xl hover:shadow-cyan-500/10 hover:-translate-y-1"
+              className="group relative rounded-2xl bg-slate-50 dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800/90 hover:border-cyan-500/50 p-6 flex flex-col justify-between transition-all duration-300 shadow-sm hover:shadow-xl hover:shadow-cyan-500/10 hover:-translate-y-1"
             >
               {/* Card Header & Icon */}
               <div>
                 <div className="flex items-center justify-between mb-5">
-                  <div className="p-3 rounded-xl bg-blue-950/60 border border-blue-800/40 group-hover:border-cyan-500/40 transition-colors">
+                  <div className="p-3 rounded-xl bg-blue-50 dark:bg-blue-950/60 border border-blue-200 dark:border-blue-800/40 group-hover:border-cyan-500/40 transition-colors">
                     {renderIcon(item.icon)}
                   </div>
-                  <span className="text-xs font-mono text-slate-600 group-hover:text-cyan-400 transition-colors">
+                  <span className="text-xs font-mono text-slate-400 dark:text-slate-600 group-hover:text-cyan-600 dark:group-hover:text-cyan-400 transition-colors">
                     0{idx + 1}
                   </span>
                 </div>
 
-                <h3 className="text-base font-bold text-white group-hover:text-cyan-300 transition-colors mb-2">
+                <h3 className="text-base font-bold text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-cyan-300 transition-colors mb-2">
                   {item.title[lang]}
                 </h3>
 
-                <p className="text-xs text-slate-400 leading-relaxed line-clamp-3 mb-4">
+                <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed line-clamp-3 mb-4">
                   {item.shortDesc[lang]}
                 </p>
 
@@ -92,13 +92,13 @@ export function Expertise() {
                   {item.technologies.slice(0, 3).map((tech, tIdx) => (
                     <span
                       key={tIdx}
-                      className="text-[10px] px-2 py-0.5 rounded bg-slate-800/80 text-slate-300 border border-slate-700/50 font-mono"
+                      className="text-[10px] px-2 py-0.5 rounded bg-white dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700/50 font-mono shadow-xs"
                     >
                       {tech}
                     </span>
                   ))}
                   {item.technologies.length > 3 && (
-                    <span className="text-[10px] px-1.5 py-0.5 rounded bg-slate-800/40 text-slate-500 font-mono">
+                    <span className="text-[10px] px-1.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800/40 text-slate-500 font-mono">
                       +{item.technologies.length - 3}
                     </span>
                   )}
@@ -108,10 +108,10 @@ export function Expertise() {
               {/* View Deep Details Button */}
               <button
                 onClick={() => setSelectedExpertise(item)}
-                className="w-full inline-flex items-center justify-between px-3.5 py-2 text-xs font-semibold text-slate-300 hover:text-white bg-slate-900/90 hover:bg-slate-800 border border-slate-800 rounded-lg group-hover:border-cyan-500/40 transition-all"
+                className="w-full inline-flex items-center justify-between px-3.5 py-2 text-xs font-semibold text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white bg-white dark:bg-slate-900/90 hover:bg-slate-100 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-800 rounded-lg group-hover:border-cyan-500/40 transition-all shadow-xs"
               >
                 <span>{t('expertise.viewDetails')}</span>
-                <ChevronRight className={`w-3.5 h-3.5 text-cyan-400 transition-transform ${lang === 'ar' ? 'rotate-180 group-hover:-translate-x-1' : 'group-hover:translate-x-1'}`} />
+                <ChevronRight className={`w-3.5 h-3.5 text-cyan-600 dark:text-cyan-400 transition-transform ${lang === 'ar' ? 'rotate-180 group-hover:-translate-x-1' : 'group-hover:translate-x-1'}`} />
               </button>
             </div>
           ))}

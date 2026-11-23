@@ -72,7 +72,7 @@ export function Contact({ selectedService }: ContactProps) {
   };
 
   return (
-    <section id="contact" className="py-24 relative overflow-hidden bg-slate-950/80 border-t border-slate-900">
+    <section id="contact" className="py-24 relative overflow-hidden bg-slate-50 dark:bg-slate-950/80 border-t border-slate-200 dark:border-slate-900">
       {/* Background Glow */}
       <div className="absolute top-1/4 -right-20 w-80 h-80 bg-cyan-600/10 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute bottom-10 -left-20 w-80 h-80 bg-blue-600/10 rounded-full blur-[120px] pointer-events-none" />
@@ -81,14 +81,14 @@ export function Contact({ selectedService }: ContactProps) {
         
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-950/60 border border-blue-800/40 text-cyan-400 text-xs font-semibold mb-3">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100 dark:bg-blue-950/60 border border-blue-200 dark:border-blue-800/40 text-blue-700 dark:text-cyan-400 text-xs font-semibold mb-3">
             <Send className="w-3.5 h-3.5" />
             <span>{t('contact.sectionTitle')}</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
             {t('contact.title')}
           </h2>
-          <p className="mt-3 text-base text-slate-400">
+          <p className="mt-3 text-base text-slate-600 dark:text-slate-400">
             {t('contact.subtitle')}
           </p>
         </div>
@@ -98,12 +98,12 @@ export function Contact({ selectedService }: ContactProps) {
           {/* Direct Channels Column */}
           <div className="lg:col-span-5 space-y-4">
             
-            <div className="p-6 rounded-2xl bg-slate-900/40 border border-slate-800/90 space-y-4">
-              <h3 className="text-base font-bold text-white flex items-center gap-2">
-                <Sparkles className="w-4 h-4 text-cyan-400" />
+            <div className="p-6 rounded-2xl bg-white dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800/90 shadow-sm space-y-4">
+              <h3 className="text-base font-bold text-slate-900 dark:text-white flex items-center gap-2">
+                <Sparkles className="w-4 h-4 text-blue-600 dark:text-cyan-400" />
                 <span>{t('contact.directContact')}</span>
               </h3>
-              <p className="text-xs text-slate-400 leading-relaxed">
+              <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
                 {lang === 'ar' 
                   ? 'يمكنك التواصل الفوري معي مباشرة عبر القنوات التالية لمناقشة المشاريع والعروض الهندسية:' 
                   : 'Reach out directly through any of the following channels for project inquiries, technical advisory, or partnerships:'}
@@ -115,16 +115,16 @@ export function Contact({ selectedService }: ContactProps) {
                 {/* Email */}
                 <a
                   href={`mailto:${PROFILE.socials.email}`}
-                  className="flex items-start gap-3 p-3.5 rounded-xl bg-slate-950/70 border border-slate-800/80 hover:border-cyan-500/40 transition-colors group"
+                  className="flex items-start gap-3 p-3.5 rounded-xl bg-slate-50 dark:bg-slate-950/70 border border-slate-200 dark:border-slate-800/80 hover:border-cyan-500/40 transition-colors group"
                 >
-                  <div className="p-2 rounded-lg bg-blue-950/70 text-blue-400 group-hover:text-cyan-300">
+                  <div className="p-2 rounded-lg bg-blue-100 dark:bg-blue-950/70 text-blue-600 dark:text-blue-400 group-hover:text-cyan-600 dark:group-hover:text-cyan-300">
                     <Mail className="w-4 h-4" />
                   </div>
                   <div>
-                    <span className="text-xs font-semibold text-slate-300 group-hover:text-cyan-300 block">
+                    <span className="text-xs font-semibold text-slate-800 dark:text-slate-300 group-hover:text-blue-600 dark:group-hover:text-cyan-300 block">
                       {t('contact.emailDirect')}
                     </span>
-                    <span className="text-[11px] font-mono text-slate-400">
+                    <span className="text-[11px] font-mono text-slate-500 dark:text-slate-400">
                       {PROFILE.socials.email}
                     </span>
                   </div>
@@ -135,16 +135,16 @@ export function Contact({ selectedService }: ContactProps) {
                   href={PROFILE.socials.whatsapp}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-start gap-3 p-3.5 rounded-xl bg-slate-950/70 border border-slate-800/80 hover:border-emerald-500/40 transition-colors group"
+                  className="flex items-start gap-3 p-3.5 rounded-xl bg-slate-50 dark:bg-slate-950/70 border border-slate-200 dark:border-slate-800/80 hover:border-emerald-500/40 transition-colors group"
                 >
-                  <div className="p-2 rounded-lg bg-emerald-950/70 text-emerald-400 group-hover:text-emerald-300">
+                  <div className="p-2 rounded-lg bg-emerald-100 dark:bg-emerald-950/70 text-emerald-600 dark:text-emerald-400 group-hover:text-emerald-500 dark:group-hover:text-emerald-300">
                     <Phone className="w-4 h-4" />
                   </div>
                   <div>
-                    <span className="text-xs font-semibold text-slate-300 group-hover:text-emerald-300 block">
+                    <span className="text-xs font-semibold text-slate-800 dark:text-slate-300 group-hover:text-emerald-600 dark:group-hover:text-emerald-300 block">
                       {t('contact.whatsappDirect')}
                     </span>
-                    <span className="text-[11px] font-mono text-slate-400">
+                    <span className="text-[11px] font-mono text-slate-500 dark:text-slate-400">
                       {PROFILE.socials.whatsappDisplay}
                     </span>
                   </div>
@@ -153,8 +153,8 @@ export function Contact({ selectedService }: ContactProps) {
             </div>
 
             {/* SLA / Availability Badge */}
-            <div className="p-4 rounded-xl bg-blue-950/30 border border-blue-900/40 flex items-center gap-3 text-xs text-slate-300">
-              <Clock className="w-5 h-5 text-cyan-400 shrink-0" />
+            <div className="p-4 rounded-xl bg-blue-50/80 dark:bg-blue-950/30 border border-blue-200 dark:border-blue-900/40 flex items-center gap-3 text-xs text-slate-700 dark:text-slate-300">
+              <Clock className="w-5 h-5 text-blue-600 dark:text-cyan-400 shrink-0" />
               <span>
                 {lang === 'ar' 
                   ? 'متوسط وقت الرد: خلال أقل من 24 ساعة لجميع الاستفسارات التقنية والمشاريع.' 
@@ -166,12 +166,12 @@ export function Contact({ selectedService }: ContactProps) {
 
           {/* Interactive Form Column */}
           <div className="lg:col-span-7">
-            <div className="glass-panel p-6 sm:p-8 rounded-2xl border border-slate-800/90 shadow-2xl relative">
+            <div className="p-6 sm:p-8 rounded-2xl bg-white dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800/90 shadow-xl relative">
               
               {/* Anti-spam security notice */}
-              <div className="flex items-center justify-between pb-4 mb-6 border-b border-slate-800 text-[11px] text-slate-500 font-mono">
+              <div className="flex items-center justify-between pb-4 mb-6 border-b border-slate-200 dark:border-slate-800 text-[11px] text-slate-500 font-mono">
                 <span className="flex items-center gap-1.5">
-                  <ShieldCheck className="w-3.5 h-3.5 text-emerald-400" />
+                  <ShieldCheck className="w-3.5 h-3.5 text-emerald-500 dark:text-emerald-400" />
                   Sanitized & Encrypted Transmission
                 </span>
                 <span>TLS 1.3</span>
@@ -179,8 +179,8 @@ export function Contact({ selectedService }: ContactProps) {
 
               {/* Status Alerts */}
               {status === 'success' && (
-                <div className="p-4 mb-6 rounded-xl bg-emerald-950/80 border border-emerald-800 text-emerald-200 text-xs sm:text-sm flex items-start gap-3 animate-fade-in">
-                  <CheckCircle2 className="w-5 h-5 text-emerald-400 shrink-0 mt-0.5" />
+                <div className="p-4 mb-6 rounded-xl bg-emerald-50 dark:bg-emerald-950/80 border border-emerald-200 dark:border-emerald-800 text-emerald-800 dark:text-emerald-200 text-xs sm:text-sm flex items-start gap-3 animate-fade-in">
+                  <CheckCircle2 className="w-5 h-5 text-emerald-600 dark:text-emerald-400 shrink-0 mt-0.5" />
                   <div>
                     <p className="font-semibold">{t('contact.formSuccess')}</p>
                   </div>
@@ -188,8 +188,8 @@ export function Contact({ selectedService }: ContactProps) {
               )}
 
               {status === 'error' && (
-                <div className="p-4 mb-6 rounded-xl bg-red-950/80 border border-red-800 text-red-200 text-xs sm:text-sm flex items-start gap-3 animate-fade-in">
-                  <AlertCircle className="w-5 h-5 text-red-400 shrink-0 mt-0.5" />
+                <div className="p-4 mb-6 rounded-xl bg-red-50 dark:bg-red-950/80 border border-red-200 dark:border-red-800 text-red-800 dark:text-red-200 text-xs sm:text-sm flex items-start gap-3 animate-fade-in">
+                  <AlertCircle className="w-5 h-5 text-red-600 dark:text-red-400 shrink-0 mt-0.5" />
                   <div>
                     <p className="font-semibold">{errorMessage}</p>
                   </div>
@@ -215,8 +215,8 @@ export function Contact({ selectedService }: ContactProps) {
                 {/* Name & Email Row */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
-                    <label htmlFor="name" className="block text-xs font-semibold text-slate-300 mb-1.5">
-                      {t('contact.nameLabel')} <span className="text-cyan-400">*</span>
+                    <label htmlFor="name" className="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5">
+                      {t('contact.nameLabel')} <span className="text-blue-600 dark:text-cyan-400">*</span>
                     </label>
                     <input
                       type="text"
@@ -226,13 +226,13 @@ export function Contact({ selectedService }: ContactProps) {
                       value={formData.name}
                       onChange={handleChange}
                       placeholder={t('contact.namePlaceholder')}
-                      className="w-full px-3.5 py-2.5 text-xs rounded-xl bg-slate-900/90 border border-slate-800 text-white placeholder-slate-500 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-colors"
+                      className="w-full px-3.5 py-2.5 text-xs rounded-xl bg-slate-50 dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-500 focus:border-cyan-500 focus:bg-white dark:focus:bg-slate-900 focus:ring-1 focus:ring-cyan-500 transition-colors"
                     />
                   </div>
 
                   <div>
-                    <label htmlFor="email" className="block text-xs font-semibold text-slate-300 mb-1.5">
-                      {t('contact.emailLabel')} <span className="text-cyan-400">*</span>
+                    <label htmlFor="email" className="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5">
+                      {t('contact.emailLabel')} <span className="text-blue-600 dark:text-cyan-400">*</span>
                     </label>
                     <input
                       type="email"
@@ -242,14 +242,14 @@ export function Contact({ selectedService }: ContactProps) {
                       value={formData.email}
                       onChange={handleChange}
                       placeholder={t('contact.emailPlaceholder')}
-                      className="w-full px-3.5 py-2.5 text-xs rounded-xl bg-slate-900/90 border border-slate-800 text-white placeholder-slate-500 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-colors"
+                      className="w-full px-3.5 py-2.5 text-xs rounded-xl bg-slate-50 dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-500 focus:border-cyan-500 focus:bg-white dark:focus:bg-slate-900 focus:ring-1 focus:ring-cyan-500 transition-colors"
                     />
                   </div>
                 </div>
 
                 {/* Requested Service */}
                 <div>
-                  <label htmlFor="service" className="block text-xs font-semibold text-slate-300 mb-1.5">
+                  <label htmlFor="service" className="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5">
                     {t('contact.serviceLabel')}
                   </label>
                   <select
@@ -257,7 +257,7 @@ export function Contact({ selectedService }: ContactProps) {
                     name="service"
                     value={formData.service}
                     onChange={handleChange}
-                    className="w-full px-3.5 py-2.5 text-xs rounded-xl bg-slate-900/90 border border-slate-800 text-slate-300 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-colors"
+                    className="w-full px-3.5 py-2.5 text-xs rounded-xl bg-slate-50 dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800 text-slate-800 dark:text-slate-300 focus:border-cyan-500 focus:bg-white dark:focus:bg-slate-900 focus:ring-1 focus:ring-cyan-500 transition-colors"
                   >
                     <option value="">{t('contact.serviceSelectPlaceholder')}</option>
                     {SERVICES_LIST.map((srv) => (
@@ -270,8 +270,8 @@ export function Contact({ selectedService }: ContactProps) {
 
                 {/* Message Field */}
                 <div>
-                  <label htmlFor="message" className="block text-xs font-semibold text-slate-300 mb-1.5">
-                    {t('contact.messageLabel')} <span className="text-cyan-400">*</span>
+                  <label htmlFor="message" className="block text-xs font-semibold text-slate-700 dark:text-slate-300 mb-1.5">
+                    {t('contact.messageLabel')} <span className="text-blue-600 dark:text-cyan-400">*</span>
                   </label>
                   <textarea
                     id="message"
@@ -281,7 +281,7 @@ export function Contact({ selectedService }: ContactProps) {
                     value={formData.message}
                     onChange={handleChange}
                     placeholder={t('contact.messagePlaceholder')}
-                    className="w-full px-3.5 py-2.5 text-xs rounded-xl bg-slate-900/90 border border-slate-800 text-white placeholder-slate-500 focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500 transition-colors resize-y"
+                    className="w-full px-3.5 py-2.5 text-xs rounded-xl bg-slate-50 dark:bg-slate-900/90 border border-slate-200 dark:border-slate-800 text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-slate-500 focus:border-cyan-500 focus:bg-white dark:focus:bg-slate-900 focus:ring-1 focus:ring-cyan-500 transition-colors resize-y"
                   />
                 </div>
 

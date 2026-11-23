@@ -33,7 +33,7 @@ export function Process() {
   };
 
   return (
-    <section id="process" className="py-24 relative overflow-hidden bg-slate-950 border-t border-slate-900">
+    <section id="process" className="py-24 relative overflow-hidden bg-white dark:bg-slate-950 border-t border-slate-200 dark:border-slate-900">
       {/* Background ambient glow */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[300px] bg-blue-600/10 blur-[140px] pointer-events-none" />
 
@@ -41,14 +41,14 @@ export function Process() {
         
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-950/60 border border-blue-800/40 text-cyan-400 text-xs font-semibold mb-3">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100 dark:bg-blue-950/60 border border-blue-200 dark:border-blue-800/40 text-blue-700 dark:text-cyan-400 text-xs font-semibold mb-3">
             <GitCommit className="w-3.5 h-3.5" />
             <span>{t('process.sectionTitle')}</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
             {t('process.title')}
           </h2>
-          <p className="mt-3 text-base text-slate-400">
+          <p className="mt-3 text-base text-slate-600 dark:text-slate-400">
             {t('process.subtitle')}
           </p>
         </div>
@@ -72,39 +72,39 @@ export function Process() {
                 >
                   {/* Step Content Card */}
                   <div className="w-full lg:w-1/2">
-                    <div className="group p-6 sm:p-8 rounded-2xl bg-slate-900/40 border border-slate-800/90 hover:border-cyan-500/50 shadow-xl transition-all duration-300 hover:shadow-cyan-500/10 hover:-translate-y-1">
+                    <div className="group p-6 sm:p-8 rounded-2xl bg-slate-50 dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800/90 hover:border-cyan-500/50 shadow-md hover:shadow-xl transition-all duration-300 hover:shadow-cyan-500/10 hover:-translate-y-1">
                       
                       {/* Step Number & Icon */}
                       <div className="flex items-center justify-between mb-4">
                         <div className="flex items-center gap-3">
-                          <div className="p-2.5 rounded-xl bg-blue-950/70 border border-blue-900/50">
+                          <div className="p-2.5 rounded-xl bg-blue-100/70 dark:bg-blue-950/70 border border-blue-200 dark:border-blue-900/50">
                             {renderIcon(step.icon)}
                           </div>
-                          <span className="font-mono text-2xl font-black bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+                          <span className="font-mono text-2xl font-black bg-gradient-to-r from-blue-600 to-cyan-500 bg-clip-text text-transparent">
                             {step.step}
                           </span>
                         </div>
-                        <span className="text-xs font-mono text-slate-400">
+                        <span className="text-xs font-mono text-slate-500 dark:text-slate-400">
                           PHASE_{step.step}
                         </span>
                       </div>
 
-                      <h3 className="text-lg font-bold text-white group-hover:text-cyan-300 transition-colors mb-2">
+                      <h3 className="text-lg font-bold text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-cyan-300 transition-colors mb-2">
                         {step.title[lang]}
                       </h3>
 
-                      <p className="text-xs sm:text-sm text-slate-300 leading-relaxed mb-4">
+                      <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-300 leading-relaxed mb-4">
                         {step.description[lang]}
                       </p>
 
                       {/* Deliverables */}
-                      <div className="pt-3 border-t border-slate-800/80 space-y-1.5">
-                        <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider block mb-1">
+                      <div className="pt-3 border-t border-slate-200 dark:border-slate-800/80 space-y-1.5">
+                        <span className="text-[10px] font-bold text-slate-500 dark:text-slate-400 uppercase tracking-wider block mb-1">
                           {t('process.deliverablesLabel')}:
                         </span>
                         {step.deliverables[lang].map((del, dIdx) => (
-                          <div key={dIdx} className="flex items-center gap-2 text-xs text-slate-400">
-                            <CheckCircle2 className="w-3.5 h-3.5 text-cyan-400 shrink-0" />
+                          <div key={dIdx} className="flex items-center gap-2 text-xs text-slate-600 dark:text-slate-400">
+                            <CheckCircle2 className="w-3.5 h-3.5 text-blue-600 dark:text-cyan-400 shrink-0" />
                             <span>{del}</span>
                           </div>
                         ))}
@@ -114,7 +114,7 @@ export function Process() {
                   </div>
 
                   {/* Center Dot Indicator */}
-                  <div className="hidden lg:flex items-center justify-center w-10 h-10 rounded-full bg-slate-950 border-2 border-cyan-500/80 shadow-lg shadow-cyan-500/30 z-10">
+                  <div className="hidden lg:flex items-center justify-center w-10 h-10 rounded-full bg-white dark:bg-slate-950 border-2 border-cyan-500/80 shadow-lg shadow-cyan-500/30 z-10">
                     <span className="w-2.5 h-2.5 rounded-full bg-cyan-400 animate-pulse" />
                   </div>
 

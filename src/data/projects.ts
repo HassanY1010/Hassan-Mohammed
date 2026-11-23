@@ -10,7 +10,6 @@ export const PROJECTS_LIST: ProjectItem[] = [
       en: "Tourism.sa — Saudi National Tourism Services Unified Platform",
     },
     category: "seo",
-    secondaryCategory: "web",
     featured: true,
     summary: {
       ar: "المنصة الموحدة لخدمات القطاع السياحي والوجهة الرقمية الشاملة للمستثمرين والمنشآت وممارسي الأنشطة السياحية بالمملكة. تم إجراء تحسين محركات بحث شامل (Technical & Strategic SEO) وهندسة بيانات وصفية دقيقة لتتصدر المنصة النتائج الأولى في محركات البحث ومؤشرات البحث السياحية والاستثمارية.",
@@ -54,7 +53,6 @@ export const PROJECTS_LIST: ProjectItem[] = [
       en: "Ta3limy — Vodafone Egypt Community Foundation Learning Platform",
     },
     category: "seo",
-    secondaryCategory: "web",
     featured: true,
     summary: {
       ar: "منصة تعليمية رائدة تقدم دورات متخصصة لتطوير وتنمية المهارات المهنية والشخصية ودعم رواد الأعمال والتعليم المدرسي. خضعت المنصة لتحسين محركات بحث عميق واستراتيجية أرشفة دورات تعليمية (Course Schema) لضمان تصدرها أولى نتائج البحث في محركات البحث للمهتمين بالتعليم وتطوير المهارات.",
@@ -98,7 +96,6 @@ export const PROJECTS_LIST: ProjectItem[] = [
       en: "Lux Al-Reath — Premium Painting & Decor Contracting Services in Riyadh",
     },
     category: "seo",
-    secondaryCategory: "web",
     featured: true,
     summary: {
       ar: "موقع تجاري متخصص في خدمات دهانات الفلل والقصور والشقق والمحلات التجارية بالرياض باستخدام أرقى الخامات العالمية (جوتن، سكيب). تم تطبيق تحسين SEO محلي دقيق (Local SEO & Google Maps) ليتصدر أولى نتائج البحث والخرائط للعملاء الباحثين عن معلم دهانات بالرياض.",
@@ -142,7 +139,6 @@ export const PROJECTS_LIST: ProjectItem[] = [
       en: "Social Development Bank — National Financing Portal (SDB)",
     },
     category: "seo",
-    secondaryCategory: "web",
     featured: true,
     summary: {
       ar: "البوابة الرسمية لبنك التنمية الاجتماعية لتمويل الأفراد والمنشآت ورواد الأعمال (تمويل الأسرة، كنف، الزواج، الترميم، التمويل النقدي). تم تطبيق أفضل ممارسات الـ SEO الحكومي المؤسسي وهندسة البيانات لضمان تصدر كافة البرامج التمويلية النتائج الأولى في محركات البحث بسهولة وأمان.",
@@ -831,7 +827,6 @@ export const PROJECTS_LIST: ProjectItem[] = [
       en: "Qolaro — Enterprise Operations Platform Website (SaaS)",
     },
     category: "saas",
-    secondaryCategory: "uiux",
     featured: false,
     summary: {
       ar: "موقع شركة SaaS عصرية تم بناؤه للترويج لمنتجها الرائد LERE؛ يشتمل على صفحات تفاعلية للمنتج والأسعار والتكاملات، ونظام CMS لإدارة المحتوى بالكامل بدون كود.",
@@ -875,7 +870,6 @@ export const PROJECTS_LIST: ProjectItem[] = [
       en: "Logopedie Dreumel — Healthcare & Speech Therapy Platform",
     },
     category: "web",
-    secondaryCategory: "uiux",
     featured: false,
     summary: {
       ar: "موقع طبي متكامل تم تطويره لعيادة علاج وتأهيل النطق في هولندا، يتيح لإدارة العيادة تعديل كافة الأقسام والخدمات والشهادات والمقالات بسهولة عبر Sanity CMS.",
@@ -919,7 +913,6 @@ export const PROJECTS_LIST: ProjectItem[] = [
       en: "EduNova — AI EdTech & Learning Management Platform UI/UX",
     },
     category: "uiux",
-    secondaryCategory: "ai",
     featured: true,
     imageUrl: "/images/uiux-edunova.jpg",
     summary: {
@@ -963,7 +956,6 @@ export const PROJECTS_LIST: ProjectItem[] = [
       en: "SportConnect — Sports Venue Booking & Matchmaking Platform UI/UX",
     },
     category: "uiux",
-    secondaryCategory: "mobile",
     featured: true,
     imageUrl: "/images/uiux-sportconnect.jpg",
     summary: {
@@ -1007,7 +999,6 @@ export const PROJECTS_LIST: ProjectItem[] = [
       en: "TravelX — Integrated Smart Travel, Booking & Itinerary Platform UI/UX",
     },
     category: "uiux",
-    secondaryCategory: "web",
     featured: true,
     imageUrl: "/images/uiux-travelx.jpg",
     summary: {
@@ -1051,7 +1042,6 @@ export const PROJECTS_LIST: ProjectItem[] = [
       en: "Nexora — Enterprise Business Operations & AI SaaS Platform UI/UX",
     },
     category: "uiux",
-    secondaryCategory: "saas",
     featured: true,
     imageUrl: "/images/uiux-nexora.jpg",
     summary: {
@@ -1095,7 +1085,6 @@ export const PROJECTS_LIST: ProjectItem[] = [
       en: "MoveX — On-Demand Ride Hailing, Fleet Dispatch & Live Map UI/UX",
     },
     category: "uiux",
-    secondaryCategory: "mobile",
     featured: true,
     imageUrl: "/images/uiux-movex.jpg",
     summary: {
@@ -1139,7 +1128,6 @@ export const PROJECTS_LIST: ProjectItem[] = [
       en: "PeopleAI HR — AI-Powered HR & Recruitment Management System UI/UX",
     },
     category: "uiux",
-    secondaryCategory: "saas",
     featured: true,
     imageUrl: "/images/uiux-peopleai.jpg",
     summary: {
@@ -1183,7 +1171,6 @@ export const PROJECTS_LIST: ProjectItem[] = [
       en: "Combot — Telegram Group Community Management & Automation Engine",
     },
     category: "bots",
-    secondaryCategory: "saas",
     featured: true,
     summary: {
       ar: "منظومة بوت وأتمتة شاملة لإدارة المجموعات؛ توفر الردود التلقائية الذكية، الحماية ومكافحة السبام، إدارة وترقية الأعضاء، جدولة المنشورات الدورية، تحليلات النشاط المتقدمة، وبناء قواعد أتمتة كاملة بدون الحاجة لكتابة كود (No-Code Rules).",
@@ -1229,7 +1216,6 @@ export const PROJECTS_LIST: ProjectItem[] = [
       en: "Hotel Robot — Smart Telegram Hotel Discovery & Booking Assistant",
     },
     category: "bots",
-    secondaryCategory: "ai",
     featured: true,
     summary: {
       ar: "بوت تفاعلي ذكي على منصة تليجرام يساعد المسافرين في البحث السريع عن الفنادق، اختيار المدن والوجهات السياحية، استكشاف ومقارنة خيارات الإقامة والأسعار، والمساعدة خطوة بخطوة في إتمام الحجز بكل سهولة وسرعة.",

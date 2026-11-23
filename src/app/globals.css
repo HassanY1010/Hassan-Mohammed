@@ -3,6 +3,16 @@
 @tailwind utilities;
 
 :root {
+  --background: #f8fafc;
+  --foreground: #090d16;
+  --card-bg: #ffffff;
+  --card-border: #e2e8f0;
+  --accent-blue: #1d4ed8;
+  --accent-cyan: #0284c7;
+  --accent-glow: rgba(2, 132, 199, 0.1);
+}
+
+.dark {
   --background: #030712;
   --foreground: #f8fafc;
   --card-bg: #0b1120;

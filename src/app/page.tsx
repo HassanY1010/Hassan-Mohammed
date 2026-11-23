@@ -30,7 +30,7 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-slate-950 text-slate-100 transition-colors duration-300">
+    <div className="min-h-screen flex flex-col bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-300">
       {/* Sticky Global Navigation */}
       <Header onOpenCv={handleOpenCv} />
 

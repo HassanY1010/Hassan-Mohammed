@@ -178,7 +178,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLdProfilePage) }}
         />
       </head>
-      <body className="font-sans antialiased bg-slate-950 text-slate-100 selection:bg-blue-600 selection:text-white">
+      <body className="font-sans antialiased bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100 selection:bg-blue-600 selection:text-white transition-colors duration-300">
         {/* Skip to Content Link for WCAG Accessibility */}
         <a
           href="#main-content"

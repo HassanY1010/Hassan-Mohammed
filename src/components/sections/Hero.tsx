@@ -52,41 +52,41 @@ export function Hero({ onOpenCv }: HeroProps) {
           <div className="lg:col-span-7 space-y-6 text-center lg:text-start">
             
             {/* Status Pill */}
-            <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-slate-900/80 border border-slate-800 backdrop-blur-md shadow-sm">
+            <div className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-white/90 dark:bg-slate-900/80 border border-slate-200 dark:border-slate-800 shadow-sm backdrop-blur-md">
               <span className="relative flex h-2.5 w-2.5">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500"></span>
               </span>
-              <span className="text-xs font-semibold text-slate-300">
+              <span className="text-xs font-semibold text-slate-700 dark:text-slate-300">
                 {PROFILE.availability[lang]}
               </span>
-              <span className="text-xs text-slate-600">•</span>
-              <span className="text-xs font-mono text-cyan-400">
+              <span className="text-xs text-slate-400 dark:text-slate-600">•</span>
+              <span className="text-xs font-mono text-cyan-600 dark:text-cyan-400 font-semibold">
                 {PROFILE.country[lang]}
               </span>
             </div>
 
             {/* Main Headline */}
             <div className="space-y-2">
-              <span className="text-sm sm:text-base font-semibold text-slate-400 block tracking-wider uppercase">
+              <span className="text-sm sm:text-base font-semibold text-slate-500 dark:text-slate-400 block tracking-wider uppercase">
                 {t('hero.greeting')}
               </span>
-              <h1 className="text-4xl sm:text-6xl xl:text-7xl font-black tracking-tight text-white">
-                <span className="bg-gradient-to-r from-white via-slate-100 to-slate-400 bg-clip-text text-transparent">
+              <h1 className="text-4xl sm:text-6xl xl:text-7xl font-black tracking-tight text-slate-900 dark:text-white">
+                <span className="bg-gradient-to-r from-slate-900 via-slate-800 to-slate-600 dark:from-white dark:via-slate-100 dark:to-slate-400 bg-clip-text text-transparent">
                   {PROFILE.fullName[lang]}
                 </span>
               </h1>
               
               {/* Dynamic Role Switcher */}
               <div className="h-10 sm:h-12 flex items-center justify-center lg:justify-start">
-                <span className="text-xl sm:text-2xl lg:text-3xl font-extrabold bg-gradient-to-r from-blue-400 via-cyan-400 to-teal-300 bg-clip-text text-transparent transition-all duration-500">
+                <span className="text-xl sm:text-2xl lg:text-3xl font-extrabold bg-gradient-to-r from-blue-600 via-cyan-600 to-teal-500 dark:from-blue-400 dark:via-cyan-400 dark:to-teal-300 bg-clip-text text-transparent transition-all duration-500">
                   {PROFILE.titles[lang][roleIndex]}
                 </span>
               </div>
             </div>
 
             {/* Tagline Bio */}
-            <p className="text-base sm:text-lg text-slate-300 dark:text-slate-300 leading-relaxed max-w-2xl mx-auto lg:mx-0">
+            <p className="text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed max-w-2xl mx-auto lg:mx-0">
               {PROFILE.tagline[lang]}
             </p>
 
@@ -102,34 +102,34 @@ export function Hero({ onOpenCv }: HeroProps) {
 
               <a
                 href="#contact"
-                className="inline-flex items-center gap-2 px-6 py-3.5 text-sm font-bold text-slate-200 hover:text-white bg-slate-900/90 hover:bg-slate-800 border border-slate-700/80 rounded-xl transition-all active:scale-95"
+                className="inline-flex items-center gap-2 px-6 py-3.5 text-sm font-bold text-slate-800 dark:text-slate-200 hover:text-blue-600 dark:hover:text-white bg-white dark:bg-slate-900/90 hover:bg-slate-100 dark:hover:bg-slate-800 border border-slate-300 dark:border-slate-700/80 shadow-sm rounded-xl transition-all active:scale-95"
               >
-                <Send className="w-4 h-4 text-cyan-400" />
+                <Send className="w-4 h-4 text-cyan-600 dark:text-cyan-400" />
                 <span>{t('hero.ctaContact')}</span>
               </a>
 
               <button
                 onClick={onOpenCv}
-                className="inline-flex items-center gap-2 px-5 py-3.5 text-sm font-semibold text-slate-300 hover:text-white bg-slate-950 hover:bg-slate-900 border border-slate-800 rounded-xl transition-colors active:scale-95"
+                className="inline-flex items-center gap-2 px-5 py-3.5 text-sm font-semibold text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white bg-slate-100 dark:bg-slate-950 hover:bg-slate-200 dark:hover:bg-slate-900 border border-slate-200 dark:border-slate-800 rounded-xl transition-colors active:scale-95 shadow-sm"
               >
-                <FileText className="w-4 h-4 text-blue-400" />
+                <FileText className="w-4 h-4 text-blue-600 dark:text-blue-400" />
                 <span>{t('hero.ctaCv')}</span>
               </button>
             </div>
 
             {/* Quick Pillars Badges */}
             <div className="pt-4 grid grid-cols-3 gap-3 max-w-lg mx-auto lg:mx-0">
-              <div className="p-2.5 rounded-xl bg-slate-900/40 border border-slate-800/80 text-center">
-                <span className="text-xs font-bold text-cyan-400 block font-mono">100%</span>
-                <span className="text-[11px] text-slate-400">Full Stack & AI</span>
+              <div className="p-2.5 rounded-xl bg-white/80 dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800/80 text-center shadow-sm">
+                <span className="text-xs font-bold text-cyan-600 dark:text-cyan-400 block font-mono">100%</span>
+                <span className="text-[11px] text-slate-500 dark:text-slate-400">Full Stack & AI</span>
               </div>
-              <div className="p-2.5 rounded-xl bg-slate-900/40 border border-slate-800/80 text-center">
-                <span className="text-xs font-bold text-blue-400 block font-mono">OWASP</span>
-                <span className="text-[11px] text-slate-400">Security Ready</span>
+              <div className="p-2.5 rounded-xl bg-white/80 dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800/80 text-center shadow-sm">
+                <span className="text-xs font-bold text-blue-600 dark:text-blue-400 block font-mono">OWASP</span>
+                <span className="text-[11px] text-slate-500 dark:text-slate-400">Security Ready</span>
               </div>
-              <div className="p-2.5 rounded-xl bg-slate-900/40 border border-slate-800/80 text-center">
-                <span className="text-xs font-bold text-emerald-400 block font-mono">WCAG 2.2</span>
-                <span className="text-[11px] text-slate-400">Accessible UI</span>
+              <div className="p-2.5 rounded-xl bg-white/80 dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800/80 text-center shadow-sm">
+                <span className="text-xs font-bold text-emerald-600 dark:text-emerald-400 block font-mono">WCAG 2.2</span>
+                <span className="text-[11px] text-slate-500 dark:text-slate-400">Accessible UI</span>
               </div>
             </div>
 
@@ -160,7 +160,7 @@ export function Hero({ onOpenCv }: HeroProps) {
           <div className="lg:col-span-5 space-y-4">
             
             {/* Visual Profile Avatar Card */}
-            <div className="relative group mx-auto max-w-md lg:max-w-none p-4 rounded-2xl bg-slate-900/60 border border-slate-800/90 backdrop-blur-xl flex items-center gap-4 shadow-xl hover:border-cyan-500/40 transition-all">
+            <div className="relative group mx-auto max-w-md lg:max-w-none p-4 rounded-2xl bg-white/90 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800/90 backdrop-blur-xl flex items-center gap-4 shadow-xl hover:border-cyan-500/40 transition-all">
               <div className="relative shrink-0">
                 <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full p-[2px] bg-gradient-to-tr from-cyan-400 via-blue-500 to-purple-500 shadow-xl shadow-cyan-500/25">
                   <img
@@ -169,16 +169,16 @@ export function Hero({ onOpenCv }: HeroProps) {
                     className="w-full h-full object-cover rounded-full"
                   />
                 </div>
-                <span className="absolute bottom-1 right-1 w-4 h-4 rounded-full bg-emerald-500 border-2 border-slate-950" title="Online" />
+                <span className="absolute bottom-1 right-1 w-4 h-4 rounded-full bg-emerald-500 border-2 border-white dark:border-slate-950" title="Online" />
               </div>
               <div className="flex-1">
                 <div className="flex items-center gap-2">
-                  <h2 className="text-base sm:text-lg font-bold text-white">{PROFILE.fullName[lang]}</h2>
-                  <span className="px-2 py-0.5 rounded-full bg-cyan-950 border border-cyan-800 text-[10px] font-mono text-cyan-300">PRO</span>
+                  <h2 className="text-base sm:text-lg font-bold text-slate-900 dark:text-white">{PROFILE.fullName[lang]}</h2>
+                  <span className="px-2 py-0.5 rounded-full bg-cyan-100 dark:bg-cyan-950 border border-cyan-300 dark:border-cyan-800 text-[10px] font-mono text-cyan-800 dark:text-cyan-300 font-bold">PRO</span>
                 </div>
-                <p className="text-xs text-cyan-400 font-mono mt-0.5">{PROFILE.primaryTitle}</p>
-                <div className="flex items-center gap-2 mt-2 text-[11px] text-slate-400">
-                  <span className="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse" />
+                <p className="text-xs text-cyan-600 dark:text-cyan-400 font-mono mt-0.5 font-medium">{PROFILE.primaryTitle}</p>
+                <div className="flex items-center gap-2 mt-2 text-[11px] text-slate-600 dark:text-slate-400">
+                  <span className="inline-block w-2 h-2 rounded-full bg-emerald-500 dark:bg-emerald-400 animate-pulse" />
                   <span>{PROFILE.country[lang]} • {PROFILE.availability[lang]}</span>
                 </div>
               </div>

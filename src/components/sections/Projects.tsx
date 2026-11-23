@@ -34,7 +34,7 @@ export function Projects() {
 
   const getCategoryCount = (catId: string) => {
     if (catId === 'all') return PROJECTS_LIST.length;
-    return PROJECTS_LIST.filter(p => p.category === catId || p.secondaryCategory === catId).length;
+    return PROJECTS_LIST.filter(p => p.category === catId).length;
   };
 
   const categoryOrder: Record<string, number> = {
@@ -64,7 +64,7 @@ export function Projects() {
         const orderB = categoryOrder[b.category] || 99;
         return orderA - orderB;
       })
-    : PROJECTS_LIST.filter(p => p.category === activeCategory || p.secondaryCategory === activeCategory);
+    : PROJECTS_LIST.filter(p => p.category === activeCategory);
 
   const getCategoryIcon = (category: string) => {
     switch (category) {
@@ -88,19 +88,19 @@ export function Projects() {
   };
 
   return (
-    <section id="projects" className="py-24 relative overflow-hidden bg-slate-950">
+    <section id="projects" className="py-24 relative overflow-hidden bg-white dark:bg-slate-950 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-950/60 border border-blue-800/40 text-cyan-400 text-xs font-semibold mb-3">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 dark:bg-blue-950/60 border border-blue-200 dark:border-blue-800/40 text-blue-600 dark:text-cyan-400 text-xs font-semibold mb-3">
             <FolderGit2 className="w-3.5 h-3.5" />
             <span>{t('projects.sectionTitle')}</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">
             {t('projects.title')}
           </h2>
-          <p className="mt-3 text-base text-slate-400">
+          <p className="mt-3 text-base text-slate-600 dark:text-slate-400">
             {t('projects.subtitle')}
           </p>
         </div>
@@ -118,12 +118,12 @@ export function Projects() {
                 className={`inline-flex items-center gap-1.5 px-4 py-2 text-xs font-semibold rounded-xl transition-all ${
                   isActive
                     ? 'bg-blue-600 text-white shadow-lg shadow-blue-600/30'
-                    : 'bg-slate-900 text-slate-300 hover:text-white hover:bg-slate-800 border border-slate-800'
+                    : 'bg-slate-50 dark:bg-slate-900 text-slate-700 dark:text-slate-300 hover:text-blue-600 dark:hover:text-white hover:bg-slate-100 dark:hover:bg-slate-800 border border-slate-200 dark:border-slate-800 shadow-xs'
                 }`}
               >
                 <span>{tab.label}</span>
                 <span className={`text-[10px] px-1.5 py-0.2 rounded-full font-mono ${
-                  isActive ? 'bg-blue-800/80 text-blue-100' : 'bg-slate-800 text-slate-400'
+                  isActive ? 'bg-blue-800/80 text-blue-100' : 'bg-slate-200 dark:bg-slate-800 text-slate-600 dark:text-slate-400'
                 }`}>
                   {count}
                 </span>
@@ -137,13 +137,13 @@ export function Projects() {
           {filteredProjects.map((project) => (
             <div
               key={project.id}
-              className="group rounded-2xl bg-slate-900/40 border border-slate-800/90 hover:border-cyan-500/50 overflow-hidden flex flex-col justify-between transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-500/10 hover:-translate-y-1.5"
+              className="group rounded-2xl bg-white dark:bg-slate-900/40 border border-slate-200 dark:border-slate-800/90 hover:border-cyan-500/50 overflow-hidden flex flex-col justify-between transition-all duration-300 shadow-sm hover:shadow-2xl hover:shadow-cyan-500/10 hover:-translate-y-1.5"
             >
               <div>
                 {/* Visual Header / Mockup Banner */}
                 {project.imageUrl ? (
                   <div 
-                    className="h-52 relative overflow-hidden group/img cursor-pointer bg-slate-950 border-b border-slate-800/80"
+                    className="h-52 relative overflow-hidden group/img cursor-pointer bg-slate-950 border-b border-slate-200 dark:border-slate-800/80"
                     onClick={() => setLightboxImage({ url: project.imageUrl!, title: project.title[lang] })}
                   >
                     <img
@@ -171,36 +171,36 @@ export function Projects() {
                     </div>
                   </div>
                 ) : (
-                  <div className="h-44 relative bg-gradient-to-br from-slate-900 via-slate-950 to-blue-950/60 p-5 flex flex-col justify-between border-b border-slate-800/80">
+                  <div className="h-44 relative bg-gradient-to-br from-slate-100 via-slate-50 to-blue-50/80 dark:from-slate-900 dark:via-slate-950 dark:to-blue-950/60 p-5 flex flex-col justify-between border-b border-slate-200 dark:border-slate-800/80">
                     <div className="flex items-center justify-between">
-                      <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-slate-900/90 border border-slate-700/80 text-[11px] font-mono text-cyan-300">
+                      <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white dark:bg-slate-900/90 border border-slate-200 dark:border-slate-700/80 text-[11px] font-mono text-cyan-700 dark:text-cyan-300 shadow-xs">
                         {getCategoryIcon(project.category)}
                         <span className="capitalize">{project.category}</span>
                       </span>
                       {project.category === 'seo' ? (
-                        <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-emerald-500/20 border border-emerald-500/40 text-[10px] font-semibold text-emerald-300">
-                          <TrendingUp className="w-3 h-3 text-emerald-400" />
+                        <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-emerald-100 dark:bg-emerald-500/20 border border-emerald-300 dark:border-emerald-500/40 text-[10px] font-semibold text-emerald-800 dark:text-emerald-300">
+                          <TrendingUp className="w-3 h-3 text-emerald-600 dark:text-emerald-400" />
                           {lang === 'ar' ? 'تصدر نتائج Google #1' : '#1 Google SEO'}
                         </span>
                       ) : project.category === 'bots' ? (
-                        <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-cyan-500/20 border border-cyan-500/40 text-[10px] font-semibold text-cyan-300">
-                          <Bot className="w-3 h-3 text-cyan-400" />
+                        <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-cyan-100 dark:bg-cyan-500/20 border border-cyan-300 dark:border-cyan-500/40 text-[10px] font-semibold text-cyan-800 dark:text-cyan-300">
+                          <Bot className="w-3 h-3 text-cyan-600 dark:text-cyan-400" />
                           {lang === 'ar' ? 'بوت وأتمتة ذكية' : 'Smart Bot & Automation'}
                         </span>
                       ) : project.featured ? (
-                        <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-blue-600/30 border border-blue-500/50 text-[10px] font-semibold text-blue-300">
-                          <Sparkles className="w-3 h-3 text-cyan-400" />
+                        <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-blue-100 dark:bg-blue-600/30 border border-blue-300 dark:border-blue-500/50 text-[10px] font-semibold text-blue-800 dark:text-blue-300">
+                          <Sparkles className="w-3 h-3 text-cyan-600 dark:text-cyan-400" />
                           Featured
                         </span>
                       ) : null}
                     </div>
 
                     <div className="space-y-1">
-                      <div className="flex items-center gap-2 text-[10px] font-mono text-slate-500">
+                      <div className="flex items-center gap-2 text-[10px] font-mono text-slate-400 dark:text-slate-500">
                         <span>PROJECT_ID:</span>
-                        <span className="text-slate-400 font-semibold">{project.id}</span>
+                        <span className="text-slate-600 dark:text-slate-400 font-semibold">{project.id}</span>
                       </div>
-                      <h3 className="text-base font-bold text-white group-hover:text-cyan-300 transition-colors line-clamp-2">
+                      <h3 className="text-base font-bold text-slate-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-cyan-300 transition-colors line-clamp-2">
                         {project.title[lang]}
                       </h3>
                     </div>
@@ -209,26 +209,26 @@ export function Projects() {
 
                 {/* Project Details */}
                 <div className="p-6 space-y-4">
-                  <p className="text-xs text-slate-300 leading-relaxed line-clamp-3">
+                  <p className="text-xs text-slate-600 dark:text-slate-300 leading-relaxed line-clamp-3">
                     {project.summary[lang]}
                   </p>
 
                   {/* Problem & Solution Accordion-like cards */}
                   <div className="space-y-2 text-xs">
-                    <div className="p-2.5 rounded-lg bg-slate-950/80 border border-slate-800/80">
-                      <span className="text-[10px] font-bold text-amber-400 uppercase tracking-wider block mb-0.5">
+                    <div className="p-2.5 rounded-lg bg-slate-50 dark:bg-slate-950/80 border border-slate-200 dark:border-slate-800/80">
+                      <span className="text-[10px] font-bold text-amber-600 dark:text-amber-400 uppercase tracking-wider block mb-0.5">
                         {t('projects.problemLabel')}
                       </span>
-                      <p className="text-[11px] text-slate-400 line-clamp-2">
+                      <p className="text-[11px] text-slate-600 dark:text-slate-400 line-clamp-2">
                         {project.problem[lang]}
                       </p>
                     </div>
 
-                    <div className="p-2.5 rounded-lg bg-slate-950/80 border border-slate-800/80">
-                      <span className="text-[10px] font-bold text-cyan-400 uppercase tracking-wider block mb-0.5">
+                    <div className="p-2.5 rounded-lg bg-slate-50 dark:bg-slate-950/80 border border-slate-200 dark:border-slate-800/80">
+                      <span className="text-[10px] font-bold text-blue-600 dark:text-cyan-400 uppercase tracking-wider block mb-0.5">
                         {t('projects.solutionLabel')}
                       </span>
-                      <p className="text-[11px] text-slate-400 line-clamp-2">
+                      <p className="text-[11px] text-slate-600 dark:text-slate-400 line-clamp-2">
                         {project.solution[lang]}
                       </p>
                     </div>
@@ -239,7 +239,7 @@ export function Projects() {
                     <span className="text-[10px] font-mono text-slate-500 block mb-0.5">
                       {t('projects.roleLabel')}:
                     </span>
-                    <p className="text-xs font-semibold text-slate-200">
+                    <p className="text-xs font-semibold text-slate-800 dark:text-slate-200">
                       {project.myRole[lang]}
                     </p>
                   </div>
@@ -249,13 +249,13 @@ export function Projects() {
                     {project.technologies.slice(0, 4).map((tech, tIdx) => (
                       <span
                         key={tIdx}
-                        className="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-800/80 text-slate-300 border border-slate-700/60"
+                        className="text-[10px] font-mono px-2 py-0.5 rounded bg-slate-100 dark:bg-slate-800/80 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700/60 shadow-xs"
                       >
                         {tech}
                       </span>
                     ))}
                     {project.technologies.length > 4 && (
-                      <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-slate-800/50 text-slate-500">
+                      <span className="text-[10px] font-mono px-1.5 py-0.5 rounded bg-slate-100 dark:bg-slate-800/50 text-slate-500">
                         +{project.technologies.length - 4}
                       </span>
                     )}
@@ -264,11 +264,11 @@ export function Projects() {
               </div>
 
               {/* Card Footer / Action Links */}
-              <div className="p-6 pt-0 border-t border-slate-800/60 flex items-center justify-between gap-3 mt-4">
+              <div className="p-6 pt-0 border-t border-slate-200 dark:border-slate-800/60 flex items-center justify-between gap-3 mt-4">
                 {project.imageUrl ? (
                   <button
                     onClick={() => setLightboxImage({ url: project.imageUrl!, title: project.title[lang] })}
-                    className="inline-flex items-center gap-1.5 text-xs font-semibold text-cyan-400 hover:text-cyan-300 transition-colors"
+                    className="inline-flex items-center gap-1.5 text-xs font-semibold text-cyan-600 dark:text-cyan-400 hover:text-cyan-700 dark:hover:text-cyan-300 transition-colors"
                   >
                     <Eye className="w-3.5 h-3.5" />
                     <span>{lang === 'ar' ? 'معاينة التصميم' : 'View Design'}</span>
@@ -278,16 +278,16 @@ export function Projects() {
                     href={project.liveUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 text-xs font-semibold text-cyan-400 hover:text-cyan-300 transition-colors"
+                    className="inline-flex items-center gap-1.5 text-xs font-semibold text-cyan-600 dark:text-cyan-400 hover:text-cyan-700 dark:hover:text-cyan-300 transition-colors"
                   >
                     {isPlayStoreUrl(project.liveUrl) ? (
                       <>
-                        <Play className="w-3.5 h-3.5 text-emerald-400" />
+                        <Play className="w-3.5 h-3.5 text-emerald-600 dark:text-emerald-400" />
                         <span>Google Play Store</span>
                       </>
                     ) : isTelegramUrl(project.liveUrl) ? (
                       <>
-                        <Bot className="w-3.5 h-3.5 text-cyan-400" />
+                        <Bot className="w-3.5 h-3.5 text-cyan-600 dark:text-cyan-400" />
                         <span>{lang === 'ar' ? 'تشغيل البوت على Telegram' : 'Launch Telegram Bot'}</span>
                       </>
                     ) : (
@@ -304,7 +304,7 @@ export function Projects() {
                 {/* View Details Modal Trigger */}
                 <button
                   onClick={() => setSelectedProject(project)}
-                  className="text-xs font-semibold text-slate-400 hover:text-white transition-colors"
+                  className="text-xs font-semibold text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-colors"
                 >
                   {lang === 'ar' ? 'التفاصيل والمعمارية' : 'Details & Specs'}
                 </button>
@@ -323,25 +323,25 @@ export function Projects() {
       {/* Project Details Modal */}
       {selectedProject && (
         <div 
-          className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-black/85 backdrop-blur-md overflow-y-auto animate-fade-in"
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-black/80 backdrop-blur-md overflow-y-auto animate-fade-in"
           role="dialog"
           aria-modal="true"
         >
-          <div className="relative w-full max-w-3xl max-h-[92vh] overflow-y-auto bg-slate-950 border border-slate-800 rounded-2xl shadow-2xl p-6 sm:p-8 text-slate-100">
+          <div className="relative w-full max-w-3xl max-h-[92vh] overflow-y-auto bg-white dark:bg-slate-950 border border-slate-200 dark:border-slate-800 rounded-2xl shadow-2xl p-6 sm:p-8 text-slate-800 dark:text-slate-100">
             
             {/* Modal Header */}
-            <div className="flex items-start justify-between pb-4 mb-4 border-b border-slate-800">
+            <div className="flex items-start justify-between pb-4 mb-4 border-b border-slate-200 dark:border-slate-800">
               <div>
-                <span className="text-[11px] font-mono text-cyan-400 uppercase tracking-widest block mb-1">
+                <span className="text-[11px] font-mono text-cyan-600 dark:text-cyan-400 uppercase tracking-widest block mb-1 font-bold">
                   {selectedProject.category.toUpperCase()} • {selectedProject.id}
                 </span>
-                <h3 className="text-xl sm:text-2xl font-bold text-white">
+                <h3 className="text-xl sm:text-2xl font-bold text-slate-900 dark:text-white">
                   {selectedProject.title[lang]}
                 </h3>
               </div>
               <button
                 onClick={() => setSelectedProject(null)}
-                className="p-2 text-slate-400 hover:text-white bg-slate-900 rounded-lg border border-slate-800 transition-colors"
+                className="p-2 text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white bg-slate-100 dark:bg-slate-900 rounded-lg border border-slate-200 dark:border-slate-800 transition-colors"
               >
                 <X className="w-5 h-5" />
               </button>
@@ -350,7 +350,7 @@ export function Projects() {
             {/* Design Mockup Image preview if exists */}
             {selectedProject.imageUrl && (
               <div 
-                className="relative mb-6 rounded-xl overflow-hidden border border-slate-800 group/zoom cursor-pointer shadow-xl"
+                className="relative mb-6 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800 group/zoom cursor-pointer shadow-xl"
                 onClick={() => setLightboxImage({ url: selectedProject.imageUrl!, title: selectedProject.title[lang] })}
               >
                 <img
@@ -365,34 +365,34 @@ export function Projects() {
               </div>
             )}
 
-            <div className="space-y-4 text-xs sm:text-sm text-slate-300">
+            <div className="space-y-4 text-xs sm:text-sm text-slate-600 dark:text-slate-300">
               <div>
-                <h4 className="font-bold text-slate-200 mb-1">{lang === 'ar' ? 'الوصف العام:' : 'Executive Summary:'}</h4>
-                <p className="leading-relaxed text-slate-400">{selectedProject.summary[lang]}</p>
+                <h4 className="font-bold text-slate-900 dark:text-slate-200 mb-1">{lang === 'ar' ? 'الوصف العام:' : 'Executive Summary:'}</h4>
+                <p className="leading-relaxed text-slate-600 dark:text-slate-400">{selectedProject.summary[lang]}</p>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
-                <div className="p-3.5 rounded-xl bg-slate-900/60 border border-slate-800">
-                  <span className="text-amber-400 font-bold block mb-1">{lang === 'ar' ? 'التحدي والمشكلة:' : 'Problem Statement:'}</span>
-                  <p className="text-xs text-slate-400 leading-relaxed">{selectedProject.problem[lang]}</p>
+                <div className="p-3.5 rounded-xl bg-slate-50 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800">
+                  <span className="text-amber-600 dark:text-amber-400 font-bold block mb-1">{lang === 'ar' ? 'التحدي والمشكلة:' : 'Problem Statement:'}</span>
+                  <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">{selectedProject.problem[lang]}</p>
                 </div>
-                <div className="p-3.5 rounded-xl bg-slate-900/60 border border-slate-800">
-                  <span className="text-cyan-400 font-bold block mb-1">{lang === 'ar' ? 'الحل التقني والتصميمي:' : 'Design & Technical Solution:'}</span>
-                  <p className="text-xs text-slate-400 leading-relaxed">{selectedProject.solution[lang]}</p>
+                <div className="p-3.5 rounded-xl bg-slate-50 dark:bg-slate-900/60 border border-slate-200 dark:border-slate-800">
+                  <span className="text-blue-600 dark:text-cyan-400 font-bold block mb-1">{lang === 'ar' ? 'الحل التقني والتصميمي:' : 'Design & Technical Solution:'}</span>
+                  <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">{selectedProject.solution[lang]}</p>
                 </div>
               </div>
 
               <div className="pt-2">
-                <span className="font-bold text-slate-200 block mb-1">{lang === 'ar' ? 'الدور الهندسي والتصميمي:' : 'Engineering Role:'}</span>
-                <p className="text-xs text-slate-400">{selectedProject.myRole[lang]}</p>
+                <span className="font-bold text-slate-900 dark:text-slate-200 block mb-1">{lang === 'ar' ? 'الدور الهندسي والتصميمي:' : 'Engineering Role:'}</span>
+                <p className="text-xs text-slate-600 dark:text-slate-400">{selectedProject.myRole[lang]}</p>
               </div>
 
               <div className="pt-2">
-                <span className="font-bold text-slate-200 block mb-2">{lang === 'ar' ? 'أبرز مميزات البنية ونظام التصميم:' : 'Key Architectural Highlights:'}</span>
+                <span className="font-bold text-slate-900 dark:text-slate-200 block mb-2">{lang === 'ar' ? 'أبرز مميزات البنية ونظام التصميم:' : 'Key Architectural Highlights:'}</span>
                 <ul className="space-y-1.5">
                   {selectedProject.highlights[lang].map((h, i) => (
-                    <li key={i} className="flex items-start gap-2 text-xs text-slate-300">
-                      <CheckCircle2 className="w-3.5 h-3.5 text-cyan-400 shrink-0 mt-0.5" />
+                    <li key={i} className="flex items-start gap-2 text-xs text-slate-700 dark:text-slate-300">
+                      <CheckCircle2 className="w-3.5 h-3.5 text-cyan-600 dark:text-cyan-400 shrink-0 mt-0.5" />
                       <span>{h}</span>
                     </li>
                   ))}
@@ -400,10 +400,10 @@ export function Projects() {
               </div>
 
               <div className="pt-2">
-                <span className="font-bold text-slate-200 block mb-2">{lang === 'ar' ? 'الأدوات والتقنيات:' : 'Tools & Technologies:'}</span>
+                <span className="font-bold text-slate-900 dark:text-slate-200 block mb-2">{lang === 'ar' ? 'الأدوات والتقنيات:' : 'Tools & Technologies:'}</span>
                 <div className="flex flex-wrap gap-1.5">
                   {selectedProject.technologies.map((t, i) => (
-                    <span key={i} className="px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-800 text-[11px] font-mono text-cyan-300">
+                    <span key={i} className="px-2.5 py-1 rounded-lg bg-slate-100 dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-[11px] font-mono text-cyan-700 dark:text-cyan-300">
                       {t}
                     </span>
                   ))}
@@ -411,7 +411,7 @@ export function Projects() {
               </div>
             </div>
 
-            <div className="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between">
+            <div className="mt-6 pt-4 border-t border-slate-200 dark:border-slate-800 flex items-center justify-between">
               {selectedProject.imageUrl ? (
                 <button
                   onClick={() => setLightboxImage({ url: selectedProject.imageUrl!, title: selectedProject.title[lang] })}
@@ -443,7 +443,7 @@ export function Projects() {
 
               <button
                 onClick={() => setSelectedProject(null)}
-                className="px-4 py-2 text-xs font-semibold text-slate-400 hover:text-white bg-slate-900 rounded-xl border border-slate-800 transition-colors"
+                className="px-4 py-2 text-xs font-semibold text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white bg-slate-100 dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800 transition-colors"
               >
                 {lang === 'ar' ? 'إغلاق' : 'Close'}
               </button>
