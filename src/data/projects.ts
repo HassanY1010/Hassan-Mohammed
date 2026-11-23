@@ -437,6 +437,56 @@ export const PROJECTS_LIST: ProjectItem[] = [
     },
   },
 
+  // --- Mobile Applications (Flutter & Native) ---
+  // 1. ShasPOS
+  {
+    id: "shaspos",
+    title: {
+      ar: "ShasPOS — نظام الكاشير ونقاط البيع وإدارة المخزون والمحاسبة (Android & Offline)",
+      en: "ShasPOS — All-in-One Offline POS, Inventory & Accounting Mobile App",
+    },
+    category: "mobile",
+    featured: true,
+    summary: {
+      ar: "تطبيق أندرويد متكامل وشامل لإدارة نقاط البيع والكاشير، المبيعات، المخزون، والمحاسبة المالية؛ يعمل بدون إنترنت (Offline-First). يشمل إدارة الصندوق والورديات، فواتير الباركود، المشتريات مع الموافقات والاستلام الجزئي، تتبع الدفعات وتواريخ الصلاحية (FIFO)، طباعة الإيصالات الحرارية، وإدارة ديون العملاء والموردين.",
+      en: "A comprehensive, offline-first Android Point of Sale (POS), inventory control, and accounting mobile application built with Flutter. Features multi-shift till management, barcode billing, multi-stage purchase approvals with partial receipting, batch & expiry FIFO tracking, thermal receipt printing, and complete debtor/creditor ledgers.",
+    },
+    problem: {
+      ar: "صعوبة إدارة المحلات والأنشطة التجارية في البيئات التي تعاني من انقطاع الإنترنت، وتعقيد تتبع دفعات المخزون وتواريخ الانتهاء، وتسرب السيولة النقدية نتيجة لغياب الرقابة الدقيقة على الصندوق والورديات.",
+      en: "Small-to-medium retail and food enterprises suffer from unreliable internet connectivity, fragmented accounting spreadsheets, untracked batch expiry waste, and cash leakage across cashier shifts.",
+    },
+    solution: {
+      ar: "تطوير تطبيق محمول فائق الكفاءة بـ Flutter يعمل دون اتصال بالإنترنت مع قاعدة بيانات محلية آمنة، يدعم نظام الصلاحيات الصارم (Admin, Manager, Cashier, Accountant, Auditor)، طباعة الإيصالات بتقنية Bluetooth/USB ESC/POS، واستيراد وتصدير بيانات Excel والنسخ الاحتياطي السحابي/المحلي.",
+      en: "Engineered an offline-first Flutter/Dart architecture backed by local relational storage, robust role-based access control (Admin, Manager, Cashier, Accountant, Auditor), ESC/POS thermal printing, Excel import/export pipelines, and automated encrypted backup & restore workflows.",
+    },
+    myRole: {
+      ar: "مهندس تطبيقات الهواتف الذكية (Flutter/Dart) — تصميم وتطوير بنية التطبيق، شاشات الكاشير، نظام المخزون والمحاسبة، والتكامل مع قارئ الباركود والطابعات الحرارية.",
+      en: "Lead Mobile App Engineer (Flutter & Dart) — Architecture design, offline POS engine, batch FIFO inventory, dual-entry accounting, and ESC/POS hardware integration.",
+    },
+    technologies: ["Flutter", "Dart", "Android", "Offline-First / SQLite", "POS & Cashier", "Barcode Scanning", "Thermal Printing (ESC/POS)", "Inventory & FIFO", "Accounting"],
+    liveUrl: "https://play.google.com/store/apps/details?id=com.app.shastech_shaspos",
+    highlights: {
+      ar: [
+        "منظومة POS متكاملة: بيع سريع، مسح باركود، خصومات، مرتجعات، وطرق دفع متعددة بدون إنترنت",
+        "إدارة الصندوق والورديات: فتح وإغلاق ورديات، رصيد افتتاحي، وتتبع عجز/فائض الكاشير بدقة",
+        "دورة مشتريات متقدمة: أوامر شراء، اعتمادات إدارية، استلام جزئي أو كامل، ومطابقة الفواتير",
+        "إدارة دفعات المخزون وتواريخ الصلاحية (Batch Management & Expiry Tracking) وفق سياسة FIFO",
+        "حسابات العملاء والموردين: إدارة الديون، كشوف حساب تفصيلية، وسندات القبض والصرف",
+        "طباعة فورية للإيصالات الحرارية (ESC/POS) وتصدير كشوفات وتقارير PDF و Excel احترافية",
+        "نظام صلاحيات هرمي شامل: Admin، Manager، Cashier، Accountant، Auditor",
+      ],
+      en: [
+        "Complete offline POS: fast checkout, camera/hardware barcode scanner, discounts, and multi-tender payments",
+        "Cash drawer & shift control: opening float, shift closing reconciliation, and variance tracking",
+        "Advanced purchase cycle: purchase orders, multi-step approvals, partial receipting, and invoice audit",
+        "Batch & expiry tracking with FIFO inventory valuation, stock audits, and low-inventory alerts",
+        "Customer & vendor ledger: receivables/payables, statement of accounts, and payment schedules",
+        "Direct ESC/POS thermal receipt printing, clean PDF reports, and two-way Excel data import/export",
+        "Granular 5-tier role-based access control: Admin, Manager, Cashier, Accountant, and Auditor",
+      ],
+    },
+  },
+
   // 6. Sankalp Education Foundation
   {
     id: "sankalp-education",
